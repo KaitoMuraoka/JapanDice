@@ -16,6 +16,7 @@
 		9F39B4B0271949F700E54E17 /* JapanDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4AF271949F700E54E17 /* JapanDiceTests.swift */; };
 		9F39B4BA271949F700E54E17 /* JapanDiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */; };
 		9F39B4BC271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */; };
+		9F39B4CC271983FB00E54E17 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4CB271983FB00E54E17 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9F39B4B5271949F700E54E17 /* JapanDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITests.swift; sourceTree = "<group>"; };
 		9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F39B4CB271983FB00E54E17 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9F39B49A271949F200E54E17 /* SceneDelegate.swift */,
 				9F39B4C82719502200E54E17 /* class */,
 				9F39B49C271949F200E54E17 /* ViewController.swift */,
+				9F39B4CB271983FB00E54E17 /* InfoViewController.swift */,
 				9F39B49E271949F200E54E17 /* Main.storyboard */,
 				9F39B4A1271949F700E54E17 /* Assets.xcassets */,
 				9F39B4A3271949F700E54E17 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			files = (
 				9F39B49D271949F200E54E17 /* ViewController.swift in Sources */,
 				9F39B499271949F200E54E17 /* AppDelegate.swift in Sources */,
+				9F39B4CC271983FB00E54E17 /* InfoViewController.swift in Sources */,
 				9F39B49B271949F200E54E17 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
