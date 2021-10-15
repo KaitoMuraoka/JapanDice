@@ -18,10 +18,11 @@ class ViewController: UIViewController, EAIntroDelegate {
     let diceArray = ["北海道", "青森", "秋田", "宮城", "福島", "山形", "岩手", "千葉", "埼玉", "群馬", "栃木", "茨城", "石川", "富山", "新潟", "神奈川", "東京", "静岡", "岐阜", "長野", "山梨", "福井", "大阪", "京都", "滋賀", "三重", "愛知", "島根", "鳥取", "和歌山", "奈良", "兵庫", "香川", "徳島", "山口", "広島", "岡山", "長崎", "佐賀", "福岡", "高知", "愛媛", "沖縄", "鹿児島", "宮崎", "大分", "熊本"]
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        //EAIntro
-        walkThrough()
+        
     }
+    
     
 //    MARK: -EAIntro
     func walkThrough(){

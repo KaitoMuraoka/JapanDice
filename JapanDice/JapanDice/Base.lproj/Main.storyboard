@@ -16,13 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="Gvz-cR-O1J">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="Gvz-cR-O1J">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9eq-we-3Xh">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9eq-we-3Xh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZwM-eg-YXB">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,24 +40,30 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="都道府県ダイス" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4l-aq-gH0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県ダイス" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4l-aq-gH0">
                                 <rect key="frame" x="20" y="88" width="374" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g4l-aq-gH0" secondAttribute="height" multiplier="374:89" id="gef-3U-yzp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="日本" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-SM-g8R">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="日本" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-SM-g8R">
                                 <rect key="frame" x="20" y="185" width="374" height="374"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gt7-SM-g8R" secondAttribute="height" multiplier="1:1" id="04K-OX-bA7"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="dee-mj-Yy4" appends="YES" id="klY-j0-kod"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEx-5e-vS2">
-                                <rect key="frame" x="113" y="592" width="189" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEx-5e-vS2">
+                                <rect key="frame" x="134" y="592" width="146.5" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pEx-5e-vS2" secondAttribute="height" multiplier="189:130" id="FsK-ys-G0A"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ダイスを振る">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
@@ -71,9 +75,28 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="leading" secondItem="g4l-aq-gH0" secondAttribute="leading" id="1ub-uW-Qq2"/>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="trailing" secondItem="g4l-aq-gH0" secondAttribute="trailing" id="4yw-fx-hak"/>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="centerX" secondItem="Gvz-cR-O1J" secondAttribute="centerX" id="9vn-78-gic"/>
+                            <constraint firstItem="Gvz-cR-O1J" firstAttribute="bottom" secondItem="9eq-we-3Xh" secondAttribute="bottom" id="I4x-T7-qpP"/>
+                            <constraint firstItem="Gvz-cR-O1J" firstAttribute="top" secondItem="9eq-we-3Xh" secondAttribute="top" id="JPm-wS-4Zd"/>
+                            <constraint firstItem="pEx-5e-vS2" firstAttribute="top" secondItem="gt7-SM-g8R" secondAttribute="bottom" constant="33" id="Me6-CD-x3S"/>
+                            <constraint firstItem="Gvz-cR-O1J" firstAttribute="leading" secondItem="9eq-we-3Xh" secondAttribute="leading" id="QdG-RI-oi9"/>
+                            <constraint firstItem="Gvz-cR-O1J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wbf-yp-yKw"/>
+                            <constraint firstAttribute="bottom" secondItem="Gvz-cR-O1J" secondAttribute="bottom" id="XA6-dd-OlS"/>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="top" secondItem="g4l-aq-gH0" secondAttribute="bottom" constant="8" symbolic="YES" id="Xfa-gr-DUV"/>
+                            <constraint firstItem="Gvz-cR-O1J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xlk-eD-i0T"/>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="185" id="ZI8-9x-vWb"/>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="centerX" secondItem="9eq-we-3Xh" secondAttribute="centerX" id="b52-ce-9Jw"/>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dwA-j1-qk9"/>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eY8-2w-xKB"/>
+                            <constraint firstItem="gt7-SM-g8R" firstAttribute="centerX" secondItem="pEx-5e-vS2" secondAttribute="centerX" id="yah-Nj-2Lk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ptw-pm-QKW">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle" catalog="system" id="Ihq-eJ-61d">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="info:" destination="BYZ-38-t0r" id="qnQ-1y-UTP"/>
                             </connections>
