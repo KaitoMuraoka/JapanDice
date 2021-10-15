@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var NameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var prefecturesImage: UIImageView!
     @IBOutlet weak var button: UIButton!
     
@@ -17,16 +17,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        button.setTitle("ダイスを振る", for: .normal)
     }
-    
-    var a = Int.random(in: 0...3)
-
     @IBAction func throwDiceButton(_ sender: Any) {
         
         let imageName = diceArray.randomElement()!
         prefecturesImage.image = UIImage(named: imageName)
-        print(imageName)
+        nameLabel.text = imageName
         
     }
     
