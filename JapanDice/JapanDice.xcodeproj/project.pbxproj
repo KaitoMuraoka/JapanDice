@@ -101,6 +101,7 @@
 			children = (
 				9F39B498271949F200E54E17 /* AppDelegate.swift */,
 				9F39B49A271949F200E54E17 /* SceneDelegate.swift */,
+				9F39B4C82719502200E54E17 /* class */,
 				9F39B49C271949F200E54E17 /* ViewController.swift */,
 				9F39B49E271949F200E54E17 /* Main.storyboard */,
 				9F39B4A1271949F700E54E17 /* Assets.xcassets */,
@@ -125,6 +126,13 @@
 				9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */,
 			);
 			path = JapanDiceUITests;
+			sourceTree = "<group>";
+		};
+		9F39B4C82719502200E54E17 /* class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
