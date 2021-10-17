@@ -1,4 +1,7 @@
 # 都道府県ダイス
+<img src = "https://user-images.githubusercontent.com/70003919/137634660-5a7d734c-df64-4794-a420-8f73565e0561.gif" width = 320px>
+
+
 ## 使用言語
 - Swift5
 ## CocoaPod
