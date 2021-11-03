@@ -57,17 +57,29 @@ class ViewController: UIViewController, EAIntroDelegate {
     }
     
     @IBAction func tapImage(_ sender: Any) {
-        
         let itemName = nameLabel.text!
-        let itemEncodeString = itemName.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
-        let urlString = "https://www.google.com/search?q=\(itemEncodeString!)%E3%80%80%E8%A6%B3%E5%85%89&sxsrf=AOaemvLpFFO50VjwGcKwh1SsKHpi3lqFYg%3A1634163806388&ei=XlxnYbSbF8avoASMoYGIAQ&ved=0ahUKEwi0wrzJtsjzAhXGF4gKHYxQABEQ4dUDCA4&uact=5&oq=\(itemEncodeString!)%E3%80%80%E8%A6%B3%E5%85%89&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEIMBMgkIABCABBAEECUyBAgAEEMyCQgAEIAEEAQQJTIJCAAQgAQQBBAlMgQIABBDMgQIABBDMgkIABCABBAEECU6BwgAEEcQsAM6BQgAELEDOgcIABCABBAESgQIQRgAUOIIWOIXYJEeaAFwAngAgAHIAogB8AySAQcwLjYuMS4xmAEAoAEByAEIwAEB&sclient=gws-wiz"
-        //safariを開かせる
-        let url = NSURL(string: urlString)
-        
-        if UIApplication.shared.canOpenURL(url! as URL){
+        let alert = UIAlertController(title: "\(itemName)の観光について検索します", message: "よろしいですか？", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction!) in
             
-            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+            let itemEncodeString = itemName.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
+            let urlString = "https://www.google.com/search?q=\(itemEncodeString!)%E3%80%80%E8%A6%B3%E5%85%89&sxsrf=AOaemvLpFFO50VjwGcKwh1SsKHpi3lqFYg%3A1634163806388&ei=XlxnYbSbF8avoASMoYGIAQ&ved=0ahUKEwi0wrzJtsjzAhXGF4gKHYxQABEQ4dUDCA4&uact=5&oq=\(itemEncodeString!)%E3%80%80%E8%A6%B3%E5%85%89&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEIMBMgkIABCABBAEECUyBAgAEEMyCQgAEIAEEAQQJTIJCAAQgAQQBBAlMgQIABBDMgQIABBDMgkIABCABBAEECU6BwgAEEcQsAM6BQgAELEDOgcIABCABBAESgQIQRgAUOIIWOIXYJEeaAFwAngAgAHIAogB8AySAQcwLjYuMS4xmAEAoAEByAEIwAEB&sclient=gws-wiz"
+            //safariを開かせる
+            let url = NSURL(string: urlString)
+            
+            if UIApplication.shared.canOpenURL(url! as URL){
+                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+                
+            }
         }
+        
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel) { (action: UIAlertAction) in
+            print("Cancel")
+        }
+        
+        alert.addAction(cancelAction)
+        alert.addAction(defaultAction)
+        
+        present(alert, animated: true, completion: nil)
     }
     
     //MARK: -infomation

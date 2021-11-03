@@ -113,9 +113,9 @@
 		93493C9F028EDD2C77C482BAB9482AE7 /* EARestrictedScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EARestrictedScrollView.h; path = EARestrictedScrollView/EARestrictedScrollView.h; sourceTree = "<group>"; };
 		94E0B57753DAA3048FA067DBFCF06467 /* EAIntroView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EAIntroView-dummy.m"; sourceTree = "<group>"; };
 		9B15D8036E798260BDD46406BAA1418E /* EAIntroView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EAIntroView.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3BF66870133BC026751CB7E671C51D /* EAIntroView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EAIntroView.h; path = EAIntroView/EAIntroView.h; sourceTree = "<group>"; };
-		9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EARestrictedScrollView; path = EARestrictedScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F993663B3367094F9B371817504B205 /* EARestrictedScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EARestrictedScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1389AC4236F9B7AEDBEA71CF57BE46C /* Pods-JapanDice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDice-dummy.m"; sourceTree = "<group>"; };
 		AD656E11B5C2442C789DD578E1E9C6D7 /* Pods-JapanDice-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-Info.plist"; sourceTree = "<group>"; };
 		B02779A8EEC23B22CDEA8609E688C92A /* Pods-JapanDice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JapanDice.modulemap"; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		E5EEAAF533593968C9B52D53D638D61C /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice-JapanDiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6DDEF9446CCF033C62CE2973B352659 /* EARestrictedScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EARestrictedScrollView-prefix.pch"; sourceTree = "<group>"; };
 		EAD56314D2E76334C6B89DA454305472 /* Pods-JapanDice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapanDice-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EAIntroView; path = EAIntroView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EAIntroView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E4D692D059489E77F2B3B3078B4CD3 /* EARestrictedScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EARestrictedScrollView-Info.plist"; sourceTree = "<group>"; };
 		FF1D54F1844C76FEBC856F6446710F95 /* Pods-JapanDice-JapanDiceUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDice-JapanDiceUITests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,15 +233,14 @@
 				5740EB08182EE309B392228716FE1205 /* EAIntroView.m */,
 				24DCA2A726C9780588DF6B1E2D5CA24F /* Support Files */,
 			);
-			name = EAIntroView;
 			path = EAIntroView;
 			sourceTree = "<group>";
 		};
 		74FB746CA1CD38058FC40F7E6358F9F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */,
-				9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */,
+				F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView.framework */,
+				9F993663B3367094F9B371817504B205 /* EARestrictedScrollView.framework */,
 				C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods-JapanDice */,
 				6EACFE9F9F4A554CD361D071BF5278D9 /* Pods-JapanDice-JapanDiceUITests */,
 				7226A3C18E024DF70C95136139B46658 /* Pods-JapanDiceTests */,
@@ -272,7 +271,6 @@
 				23CBA6C5BE53FFE41522DBABB18FF571 /* EARestrictedScrollView.m */,
 				D0ED7797BD3FABA07C794AD510AB2771 /* Support Files */,
 			);
-			name = EARestrictedScrollView;
 			path = EARestrictedScrollView;
 			sourceTree = "<group>";
 		};
@@ -401,7 +399,7 @@
 			);
 			name = EARestrictedScrollView;
 			productName = EARestrictedScrollView;
-			productReference = 9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */;
+			productReference = 9F993663B3367094F9B371817504B205 /* EARestrictedScrollView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		92D4FBE774CB24BDE93321DA352C3D0A /* Pods-JapanDice-JapanDiceUITests */ = {
@@ -479,7 +477,7 @@
 			);
 			name = EAIntroView;
 			productName = EAIntroView;
-			productReference = F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */;
+			productReference = F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -489,7 +487,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1310;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -652,7 +650,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -762,7 +760,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -870,7 +868,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EAIntroView/EAIntroView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EAIntroView/EAIntroView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1033,7 +1031,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EAIntroView/EAIntroView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EAIntroView/EAIntroView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
