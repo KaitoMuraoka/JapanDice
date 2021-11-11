@@ -68,7 +68,6 @@ class ViewController: UIViewController, EAIntroDelegate {
             
             if UIApplication.shared.canOpenURL(url! as URL){
                 UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
-                
             }
         }
         
