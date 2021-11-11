@@ -58,6 +58,22 @@ class ViewController: UIViewController, EAIntroDelegate {
     
     @IBAction func tapImage(_ sender: Any) {
         let itemName = nameLabel.text!
+        
+        if itemName == "都道府県ダイス" {
+            return
+        }else{
+            alertFunc(itemName)
+        }
+
+    }
+    
+    //MARK: -infomation
+    @IBAction func info(_ sender: Any) {
+        
+        walkThrough()
+    }
+    
+    func alertFunc(_ itemName: String){
         let alert = UIAlertController(title: "\(itemName)の観光について検索します", message: "よろしいですか？", preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction!) in
             
@@ -79,12 +95,6 @@ class ViewController: UIViewController, EAIntroDelegate {
         alert.addAction(defaultAction)
         
         present(alert, animated: true, completion: nil)
-    }
-    
-    //MARK: -infomation
-    @IBAction func info(_ sender: Any) {
-        
-        walkThrough()
     }
     
     
