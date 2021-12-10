@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iB9-Bb-0YQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iB9-Bb-0YQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,12 +31,17 @@
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8yc-m7-dCK">
                                                 <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <gestureRecognizers/>
                                             </view>
                                             <vibrancyEffect>
                                                 <blurEffect style="regular"/>
                                             </vibrancyEffect>
                                         </visualEffectView>
                                     </subviews>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="ZRl-Ml-x0Z" appends="YES" id="XUm-sc-ZZK"/>
+                                    </connections>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -49,7 +54,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="日本" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-SM-g8R">
+                            <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="日本" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-SM-g8R">
                                 <rect key="frame" x="20" y="132" width="374" height="374"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -96,10 +101,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ptw-pm-QKW">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle" catalog="system" id="Ihq-eJ-61d">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.3.horizontal" catalog="system" id="Ihq-eJ-61d">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="info:" destination="BYZ-38-t0r" id="qnQ-1y-UTP"/>
+                                <segue destination="iv6-VA-i77" kind="presentation" identifier="showMenu" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="fCc-qn-nRL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -115,8 +121,34 @@
                         <action selector="tapImage:" destination="BYZ-38-t0r" id="xhq-hZ-3H7"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZRl-Ml-x0Z"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--Show Menu View Controller-->
+        <scene sceneID="8pb-if-yIw">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="iv6-VA-i77" customClass="showMenuViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="34C-Pw-0m1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCC-J6-o0P">
+                                <rect key="frame" x="0.0" y="0.0" width="331" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Kr-kh-AfF"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuView" destination="FCC-J6-o0P" id="s9N-0s-G2z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dz7-mL-IKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900.0000000000002" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1eQ-nn-rbb">
@@ -139,7 +171,7 @@
     </scenes>
     <resources>
         <image name="bg3" width="2000" height="2402"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
         <image name="日本" width="960" height="960"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

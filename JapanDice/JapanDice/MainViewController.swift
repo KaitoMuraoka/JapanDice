@@ -19,33 +19,33 @@ class ViewController: UIViewController, EAIntroDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+
         
     }
     
     
 //    MARK: -EAIntro
-    func walkThrough(){
-        
-        let page1 = EAIntroPage()
-        page1.title = "ダイスの振り方"
-        page1.desc = "「ダイスを振る」ボタンを押すと47都道府県がランダムで表示されます"
-        page1.bgImage = UIImage(named: "bg1")
-        page1.titleFont = UIFont(name: "Helvetica-Bold", size: 32)
-        page1.descFont = UIFont(name: "Helvetica-Regular", size: 25)
-        page1.descPositionY = self.view.bounds.size.height/2
-        let page2 = EAIntroPage()
-        page2.title = "画面をタップ"
-        page2.desc = "都道府県をタップすると、その都道府県の観光について検索します"
-        page2.bgImage = UIImage(named: "bg2")
-        page2.titleFont = UIFont(name: "Helvetica-Bold", size: 32)
-        page2.descFont = UIFont(name: "Helvetica-Regular", size: 25)
-        page2.descPositionY = self.view.bounds.size.height/2
-        let introView = EAIntroView(frame: self.view.bounds, andPages: [page1, page2])
-        introView?.skipButton.setTitle("スキップ", for: UIControl.State.normal)
-        introView?.delegate = self
-        introView?.show(in: self.view, animateDuration: 1.0)
-    }
+//    func walkThrough(){
+//
+//        let page1 = EAIntroPage()
+//        page1.title = "ダイスの振り方"
+//        page1.desc = "「ダイスを振る」ボタンを押すと47都道府県がランダムで表示されます"
+//        page1.bgImage = UIImage(named: "bg1")
+//        page1.titleFont = UIFont(name: "Helvetica-Bold", size: 32)
+//        page1.descFont = UIFont(name: "Helvetica-Regular", size: 25)
+//        page1.descPositionY = self.view.bounds.size.height/2
+//        let page2 = EAIntroPage()
+//        page2.title = "画面をタップ"
+//        page2.desc = "都道府県をタップすると、その都道府県の観光について検索します"
+//        page2.bgImage = UIImage(named: "bg2")
+//        page2.titleFont = UIFont(name: "Helvetica-Bold", size: 32)
+//        page2.descFont = UIFont(name: "Helvetica-Regular", size: 25)
+//        page2.descPositionY = self.view.bounds.size.height/2
+//        let introView = EAIntroView(frame: self.view.bounds, andPages: [page1, page2])
+//        introView?.skipButton.setTitle("スキップ", for: UIControl.State.normal)
+//        introView?.delegate = self
+//        introView?.show(in: self.view, animateDuration: 1.0)
+//    }
     
     //MARK: -ダイスボタン
     @IBAction func throwDiceButton(_ sender: Any) {
@@ -70,7 +70,7 @@ class ViewController: UIViewController, EAIntroDelegate {
     //MARK: -infomation
     @IBAction func info(_ sender: Any) {
         
-        walkThrough()
+//        walkThrough()
     }
     
     func alertFunc(_ itemName: String){
