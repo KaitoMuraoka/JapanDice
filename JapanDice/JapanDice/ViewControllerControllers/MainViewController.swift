@@ -7,23 +7,34 @@
 
 import UIKit
 import EAIntroView
+import SideMenu
 
 
-class ViewController: UIViewController, EAIntroDelegate {
+class MainViewController: UIViewController, EAIntroDelegate {
+    
+    var menu: SideMenuNavigationController?
     //MARK: -メイン
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var prefecturesImage: UIImageView!
     @IBOutlet weak var button: UIButton!
     
     let diceArray = ["北海道", "青森", "秋田", "宮城", "福島", "山形", "岩手", "千葉", "埼玉", "群馬", "栃木", "茨城", "石川", "富山", "新潟", "神奈川", "東京", "静岡", "岐阜", "長野", "山梨", "福井", "大阪", "京都", "滋賀", "三重", "愛知", "島根", "鳥取", "和歌山", "奈良", "兵庫", "香川", "徳島", "山口", "広島", "岡山", "長崎", "佐賀", "福岡", "高知", "愛媛", "沖縄", "鹿児島", "宮崎", "大分", "熊本"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
         
+        menu = SideMenuNavigationController(rootViewController: MenuListController())
+        menu?.leftSide = true
+        menu?.setNavigationBarHidden(true, animated: false)
+        
+        SideMenuManager.default.leftMenuNavigationController = menu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
     }
     
-    
+    @IBAction func didTapMenu(){
+        present(menu!, animated: true)
+    }
+
 //    MARK: -EAIntro
 //    func walkThrough(){
 //
@@ -97,6 +108,37 @@ class ViewController: UIViewController, EAIntroDelegate {
         present(alert, animated: true, completion: nil)
     }
     
-    
 }
 
+//MARK: -SideMenu
+class MenuListController: UITableViewController{
+    let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
+    
+    var items = ["First", "Second", "Third"]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.backgroundColor = darkColor
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = items[indexPath.row]
+        cell.textLabel?.textColor = .white
+        cell.backgroundColor = darkColor
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        //do something
+    }
+    
+    
+}
