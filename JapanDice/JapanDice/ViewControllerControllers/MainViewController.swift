@@ -23,6 +23,7 @@ class MainViewController: UIViewController, EAIntroDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         menu = SideMenuNavigationController(rootViewController: MenuListController())
         menu?.leftSide = true
         menu?.setNavigationBarHidden(true, animated: false)
@@ -60,7 +61,6 @@ class MainViewController: UIViewController, EAIntroDelegate {
     
     //MARK: -ダイスボタン
     @IBAction func throwDiceButton(_ sender: Any) {
-        
         
         let imageName = diceArray.randomElement()!
         prefecturesImage.image = UIImage(named: imageName)
@@ -114,7 +114,7 @@ class MainViewController: UIViewController, EAIntroDelegate {
 class MenuListController: UITableViewController{
     let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
     
-    var items = ["First", "Second", "Third"]
+    var items = ["新幹線　運行状況", "飛行機　運行状況", "コロナ　感染状況"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
