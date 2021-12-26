@@ -62,9 +62,17 @@ class MainViewController: UIViewController, EAIntroDelegate {
     //MARK: -ダイスボタン
     @IBAction func throwDiceButton(_ sender: Any) {
         
-        let imageName = diceArray.randomElement()!
-        prefecturesImage.image = UIImage(named: imageName)
-        nameLabel.text = imageName
+        prefecturesImage.animationImages = animatedImages()
+        prefecturesImage.animationDuration = 0.5
+        prefecturesImage.animationRepeatCount = 2
+        prefecturesImage.image = prefecturesImage.animationImages?.first
+        
+        prefecturesImage.startAnimating()
+        let imageName = diceArray.randomElement()
+        prefecturesImage.image = UIImage(named: imageName!)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9){
+            self.nameLabel.text = imageName
+        }
     }
     
     @IBAction func tapImage(_ sender: Any) {
@@ -108,13 +116,25 @@ class MainViewController: UIViewController, EAIntroDelegate {
         present(alert, animated: true, completion: nil)
     }
     
+    func animatedImages() -> [UIImage]{
+        var images = [UIImage]()
+        
+        for name in diceArray {
+            let image = UIImage(named: name)
+            images.append(image!)
+        }
+        return images
+    }
+    
+    
+    
 }
 
 //MARK: -SideMenu
 class MenuListController: UITableViewController{
     let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
     
-    var items = ["新幹線　運行状況", "飛行機　運行状況", "コロナ　感染状況"]
+    var items = ["新幹線　運行状況", "飛行機　運行状況", "コロナ　感染状況", "使い方"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,8 +157,8 @@ class MenuListController: UITableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        //do something
+        //select menu
+        
     }
-    
     
 }
