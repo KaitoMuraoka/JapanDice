@@ -98,18 +98,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ptw-pm-QKW">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="list.dash" catalog="system" id="7Qn-0u-9X6">
+                        <barButtonItem key="leftBarButtonItem" title="設定" id="2pk-hA-4dK">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="didTapMenu" destination="BYZ-38-t0r" id="Iru-vh-HnB"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="button" destination="pEx-5e-vS2" id="ZCg-re-ZeT"/>
                         <outlet property="nameLabel" destination="g4l-aq-gH0" id="tMm-4A-7tk"/>
                         <outlet property="prefecturesImage" destination="gt7-SM-g8R" id="Z5Y-VC-MQM"/>
-                        <segue destination="R63-eX-BMp" kind="show" id="rje-JH-TSa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -120,22 +116,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="855" y="98"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="GvM-Is-sc1">
-            <objects>
-                <viewController id="R63-eX-BMp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iEl-Mk-Z0B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="tgo-mR-GOc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="sGC-J4-vvD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4N8-GM-x9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1891" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1eQ-nn-rbb">
@@ -158,7 +138,6 @@
     </scenes>
     <resources>
         <image name="bg3" width="2000" height="2402"/>
-        <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="日本" width="960" height="960"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
