@@ -97,20 +97,12 @@
                             <constraint firstItem="gt7-SM-g8R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="132" id="zlX-bX-m6t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ptw-pm-QKW">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle" catalog="system" id="oB0-Qs-dOd">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="infoButton:" destination="BYZ-38-t0r" id="Z3s-4b-WJ4"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Ptw-pm-QKW"/>
                     <connections>
                         <outlet property="button" destination="pEx-5e-vS2" id="ZCg-re-ZeT"/>
                         <outlet property="nameLabel" destination="g4l-aq-gH0" id="tMm-4A-7tk"/>
                         <outlet property="prefecturesImage" destination="gt7-SM-g8R" id="Z5Y-VC-MQM"/>
                         <segue destination="V8H-0j-c1T" kind="show" identifier="goWeb" id="kJw-r2-Lcq"/>
-                        <segue destination="XTe-aa-1RN" kind="show" identifier="goInfo" id="Y1R-uI-BdV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,22 +113,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="855" y="98"/>
-        </scene>
-        <!--Info View Controller-->
-        <scene sceneID="FJd-VM-GQs">
-            <objects>
-                <viewController storyboardIdentifier="infoViewController" id="XTe-aa-1RN" customClass="InfoViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="S6Y-b5-SOm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="o49-9m-s1P"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ETe-6S-NGX"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ha9-cC-oIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="854" y="773"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="lRV-q0-Jn5">
@@ -233,7 +209,6 @@
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="goforward" catalog="system" width="121" height="128"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="日本" width="960" height="960"/>

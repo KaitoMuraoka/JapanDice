@@ -20,7 +20,6 @@
 		9F39B4B0271949F700E54E17 /* JapanDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4AF271949F700E54E17 /* JapanDiceTests.swift */; };
 		9F39B4BA271949F700E54E17 /* JapanDiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */; };
 		9F39B4BC271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */; };
-		9FC6C3542785D8D600957145 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6C3532785D8D600957145 /* InfoViewController.swift */; };
 		C43A97A1F2EF28849AD00A3A /* Pods_JapanDice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735102FB0BCA787A652D8113 /* Pods_JapanDice.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +73,6 @@
 		9F39B4B5271949F700E54E17 /* JapanDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITests.swift; sourceTree = "<group>"; };
 		9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9FC6C3532785D8D600957145 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		AFB250555A52981C019A6B28 /* Pods-JapanDiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDiceTests.debug.xcconfig"; path = "Target Support Files/Pods-JapanDiceTests/Pods-JapanDiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B856D5320CA3A5F610D8E6F7 /* Pods_JapanDice_JapanDiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapanDice_JapanDiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAA9B9286A85636460F6E2B /* Pods-JapanDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDice.debug.xcconfig"; path = "Target Support Files/Pods-JapanDice/Pods-JapanDice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 			children = (
 				9F39B49C271949F200E54E17 /* MainViewController.swift */,
 				9F239C1A27853B2000C0711F /* WebViewController.swift */,
-				9FC6C3532785D8D600957145 /* InfoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -442,7 +439,6 @@
 				9F39B499271949F200E54E17 /* AppDelegate.swift in Sources */,
 				9F39B49B271949F200E54E17 /* SceneDelegate.swift in Sources */,
 				9F239C1B27853B2000C0711F /* WebViewController.swift in Sources */,
-				9FC6C3542785D8D600957145 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
