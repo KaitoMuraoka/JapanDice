@@ -87,6 +87,11 @@ class MainViewController: UIViewController {
         return images
     }
     
+    @IBAction func infoButton(_ sender: Any) {
+        performSegue(withIdentifier: "goInfo", sender: nil)
+    }
+    
+    
     
 }
 
