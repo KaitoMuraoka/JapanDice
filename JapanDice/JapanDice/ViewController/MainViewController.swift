@@ -61,13 +61,15 @@ class MainViewController: UIViewController {
             let itemEncodeString = itemName.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
             let urlString = "https://www.google.com/search?q=\(itemEncodeString!)%E3%80%80%E8%A6%B3%E5%85%89&sxsrf=AOaemvLpFFO50VjwGcKwh1SsKHpi3lqFYg%3A1634163806388&ei=XlxnYbSbF8avoASMoYGIAQ&ved=0ahUKEwi0wrzJtsjzAhXGF4gKHYxQABEQ4dUDCA4&uact=5&oq=\(itemEncodeString!)%E3%80%80%E8%A6%B3%E5%85%89&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEIMBMgkIABCABBAEECUyBAgAEEMyCQgAEIAEEAQQJTIJCAAQgAQQBBAlMgQIABBDMgQIABBDMgkIABCABBAEECU6BwgAEEcQsAM6BQgAELEDOgcIABCABBAESgQIQRgAUOIIWOIXYJEeaAFwAngAgAHIAogB8AySAQcwLjYuMS4xmAEAoAEByAEIwAEB&sclient=gws-wiz"
             
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! WebViewController
+            nextVC.reciever = urlString
+            self.present(nextVC, animated: true, completion: nil)
             //safariを開かせる
-            let url = NSURL(string: urlString)
-            if UIApplication.shared.canOpenURL(url! as URL){
-                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
-            }
+//            let url = NSURL(string: urlString)
+//            if UIApplication.shared.canOpenURL(url! as URL){
+//                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
         }
-        
+    
         let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel) { (action: UIAlertAction) in
             print("Cancel")
         }
@@ -77,7 +79,7 @@ class MainViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
-    
+        
     //MARK: -アニメーション
     func animatedImages() -> [UIImage]{
         var images = [UIImage]()
