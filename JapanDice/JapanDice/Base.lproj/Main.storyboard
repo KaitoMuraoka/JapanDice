@@ -102,7 +102,7 @@
                         <outlet property="button" destination="pEx-5e-vS2" id="ZCg-re-ZeT"/>
                         <outlet property="nameLabel" destination="g4l-aq-gH0" id="tMm-4A-7tk"/>
                         <outlet property="prefecturesImage" destination="gt7-SM-g8R" id="Z5Y-VC-MQM"/>
-                        <segue destination="V8H-0j-c1T" kind="presentation" identifier="goWeb" id="kJw-r2-Lcq"/>
+                        <segue destination="V8H-0j-c1T" kind="show" identifier="goWeb" id="kJw-r2-Lcq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -117,32 +117,58 @@
         <!--Web View Controller-->
         <scene sceneID="lRV-q0-Jn5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wv8-mM-EJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="secondViewController" id="V8H-0j-c1T" customClass="WebViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hp7-tx-BU0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Q7-8h-UcB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-7L-xD4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="720"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="3Q7-8h-UcB" secondAttribute="height" multiplier="207:421" id="FQa-Qd-mTv"/>
-                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fF6-ew-XPg">
+                                <rect key="frame" x="0.0" y="808" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="chevron.left" catalog="system" width="77" id="LaJ-jY-CXa">
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="V8H-0j-c1T" id="rC7-wS-YsC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="chevron.right" catalog="system" width="151" id="cd7-rs-6yG">
+                                        <connections>
+                                            <action selector="goButtonTapped:" destination="V8H-0j-c1T" id="HuT-NZ-uXE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" width="125" id="AFU-rh-n7i">
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="V8H-0j-c1T" id="tWQ-t4-PWD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="safari" catalog="system" width="131.5" id="M6C-sr-xnr"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="85y-6q-id3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KMb-4B-wsb"/>
+                    <navigationItem key="navigationItem" id="KMb-4B-wsb">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="goforward" catalog="system" id="dh1-gE-A7I">
+                            <connections>
+                                <action selector="reloadButtonTapped:" destination="V8H-0j-c1T" id="aBB-Sb-J5z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="webView" destination="3Q7-8h-UcB" id="OiF-8c-viZ"/>
+                        <outlet property="webView" destination="IK2-7L-xD4" id="aYu-GK-DSx"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wv8-mM-EJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1705.7971014492755" y="97.767857142857139"/>
         </scene>
@@ -167,6 +193,11 @@
     </scenes>
     <resources>
         <image name="bg3" width="2000" height="2402"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="goforward" catalog="system" width="121" height="128"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="日本" width="960" height="960"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -7,21 +7,46 @@
 
 import UIKit
 import WebKit
+import Accounts
 
 class WebViewController: UIViewController {
     
     //MainViewControllerから値を受け取る
-    var reciever = ""
+    var reciever: String = ""
     
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        webView.navigationDelegate = self
         let url = URL(string: reciever)!
         let request = URLRequest(url: url)
         webView.load(request)
     }
     
+    @IBAction func backButtonTapped(_ sender: Any) {
+        webView.goBack()
+    }
+    
+    @IBAction func goButtonTapped(_ sender: Any) {
+        webView.goForward()
+    }
+    
+    @IBAction func reloadButtonTapped(_ sender: Any) {
+        webView.reload()
+    }
+    
+    @IBAction func shareButtonTapped(_ sender: Any) {
+        
+        let shareWebSite = NSURL(string: reciever)
+        let activityItems = [shareWebSite]
+        
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+
+        self.present(activityVC, animated: true, completion: nil)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }

@@ -40,6 +40,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9F239C2E27857FC700C0711F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		14E0445D235423F13635FCC3 /* Pods-JapanDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDice.release.xcconfig"; path = "Target Support Files/Pods-JapanDice/Pods-JapanDice.release.xcconfig"; sourceTree = "<group>"; };
 		4AE098AF6D6ED3E1852A36EE /* Pods_JapanDiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapanDiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +206,7 @@
 				9F39B492271949F200E54E17 /* Frameworks */,
 				9F39B493271949F200E54E17 /* Resources */,
 				8A59C1C3B75E94D20D65A8F6 /* [CP] Embed Pods Frameworks */,
+				9F239C2E27857FC700C0711F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -249,7 +263,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					9F39B494271949F200E54E17 = {

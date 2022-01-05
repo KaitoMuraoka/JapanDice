@@ -63,7 +63,7 @@ class MainViewController: UIViewController {
             
             let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! WebViewController
             nextVC.reciever = urlString
-            self.present(nextVC, animated: true, completion: nil)
+            self.navigationController?.pushViewController(nextVC, animated: true)
         }
     
         let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel) { (action: UIAlertAction) in
