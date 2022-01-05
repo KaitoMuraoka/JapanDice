@@ -117,31 +117,31 @@
         <!--Web View Controller-->
         <scene sceneID="lRV-q0-Jn5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wv8-mM-EJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="secondViewController" id="V8H-0j-c1T" customClass="WebViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hp7-tx-BU0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-7L-xD4">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-7L-xD4">
                                 <rect key="frame" x="0.0" y="88" width="414" height="720"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fF6-ew-XPg">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF6-ew-XPg">
                                 <rect key="frame" x="0.0" y="808" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fF6-ew-XPg" secondAttribute="height" multiplier="207:22" id="NVC-34-sHk"/>
+                                </constraints>
                                 <items>
-                                    <barButtonItem title="Item" image="chevron.left" catalog="system" width="77" id="LaJ-jY-CXa">
+                                    <barButtonItem title="Item" image="chevron.left" catalog="system" width="66" id="LaJ-jY-CXa">
                                         <connections>
                                             <action selector="backButtonTapped:" destination="V8H-0j-c1T" id="rC7-wS-YsC"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" image="chevron.right" catalog="system" width="151" id="cd7-rs-6yG">
+                                    <barButtonItem title="Item" image="chevron.right" catalog="system" width="137" id="cd7-rs-6yG">
                                         <connections>
                                             <action selector="goButtonTapped:" destination="V8H-0j-c1T" id="HuT-NZ-uXE"/>
                                         </connections>
@@ -151,12 +151,24 @@
                                             <action selector="shareButtonTapped:" destination="V8H-0j-c1T" id="tWQ-t4-PWD"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" image="safari" catalog="system" width="131.5" id="M6C-sr-xnr"/>
+                                    <barButtonItem title="Item" image="safari" catalog="system" width="131.5" id="M6C-sr-xnr">
+                                        <connections>
+                                            <action selector="safariButtonTapped:" destination="V8H-0j-c1T" id="iAR-9f-FTX"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="85y-6q-id3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fF6-ew-XPg" firstAttribute="leading" secondItem="IK2-7L-xD4" secondAttribute="leading" id="a6y-g0-JAp"/>
+                            <constraint firstItem="fF6-ew-XPg" firstAttribute="top" secondItem="IK2-7L-xD4" secondAttribute="bottom" id="evP-Zl-FF2"/>
+                            <constraint firstItem="fF6-ew-XPg" firstAttribute="trailing" secondItem="IK2-7L-xD4" secondAttribute="trailing" id="lih-rh-Q7y"/>
+                            <constraint firstItem="IK2-7L-xD4" firstAttribute="top" secondItem="85y-6q-id3" secondAttribute="top" id="oV9-3q-dNd"/>
+                            <constraint firstItem="85y-6q-id3" firstAttribute="bottom" secondItem="fF6-ew-XPg" secondAttribute="bottom" constant="10" id="zRy-7T-mSa"/>
+                            <constraint firstItem="fF6-ew-XPg" firstAttribute="centerX" secondItem="Hp7-tx-BU0" secondAttribute="centerX" id="zpL-Z0-E6I"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KMb-4B-wsb">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="goforward" catalog="system" id="dh1-gE-A7I">
@@ -169,6 +181,7 @@
                         <outlet property="webView" destination="IK2-7L-xD4" id="aYu-GK-DSx"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wv8-mM-EJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1705.7971014492755" y="97.767857142857139"/>
         </scene>

@@ -49,4 +49,13 @@ class WebViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func safariButtonTapped(_ sender: Any) {
+        if UIApplication.shared.canOpenURL(webView.url!){
+            UIApplication.shared.open(webView.url!)
+        }else{
+            print("ブラウザ起動失敗")
+        }
+    }
+    
 }
