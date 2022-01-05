@@ -11,6 +11,8 @@ import Accounts
 
 class WebViewController: UIViewController {
     
+    @IBOutlet weak var bottomView: UIView!
+    
     //MainViewControllerから値を受け取る
     var reciever: String = ""
     
@@ -19,10 +21,13 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        bottomView.frame.size = CGSize(width: view.frame.size.width, height: view.frame.size.height - 20)
+        
         let url = URL(string: reciever)!
         let request = URLRequest(url: url)
         webView.load(request)
     }
+    
     
     @IBAction func backButtonTapped(_ sender: Any) {
         webView.goBack()
@@ -32,19 +37,20 @@ class WebViewController: UIViewController {
         webView.goForward()
     }
     
+    
     @IBAction func reloadButtonTapped(_ sender: Any) {
         webView.reload()
     }
     
     @IBAction func shareButtonTapped(_ sender: Any) {
-        
         let shareWebSite = NSURL(string: reciever)
         let activityItems = [shareWebSite]
         
-        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        let activityVC = UIActivityViewController(activityItems: activityItems as [Any], applicationActivities: nil)
 
         self.present(activityVC, animated: true, completion: nil)
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

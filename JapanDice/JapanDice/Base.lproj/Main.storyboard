@@ -123,51 +123,74 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-7L-xD4">
-                                <rect key="frame" x="0.0" y="88" width="414" height="720"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="730"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF6-ew-XPg">
-                                <rect key="frame" x="0.0" y="808" width="414" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab8-YW-5WQ">
+                                <rect key="frame" x="20" y="826" width="37" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="fF6-ew-XPg" secondAttribute="height" multiplier="207:22" id="NVC-34-sHk"/>
+                                    <constraint firstAttribute="width" secondItem="ab8-YW-5WQ" secondAttribute="height" multiplier="37:31" id="4u6-fT-h6F"/>
                                 </constraints>
-                                <items>
-                                    <barButtonItem title="Item" image="chevron.left" catalog="system" width="66" id="LaJ-jY-CXa">
-                                        <connections>
-                                            <action selector="backButtonTapped:" destination="V8H-0j-c1T" id="rC7-wS-YsC"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Item" image="chevron.right" catalog="system" width="137" id="cd7-rs-6yG">
-                                        <connections>
-                                            <action selector="goButtonTapped:" destination="V8H-0j-c1T" id="HuT-NZ-uXE"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" width="125" id="AFU-rh-n7i">
-                                        <connections>
-                                            <action selector="shareButtonTapped:" destination="V8H-0j-c1T" id="tWQ-t4-PWD"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Item" image="safari" catalog="system" width="131.5" id="M6C-sr-xnr">
-                                        <connections>
-                                            <action selector="safariButtonTapped:" destination="V8H-0j-c1T" id="iAR-9f-FTX"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="V8H-0j-c1T" eventType="touchUpInside" id="wJn-bY-FqS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R6-HQ-YvG">
+                                <rect key="frame" x="256" y="826" width="45" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6R6-HQ-YvG" secondAttribute="height" multiplier="45:31" id="nb6-vi-sck"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="V8H-0j-c1T" eventType="touchUpInside" id="gHM-Wz-vtC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSI-Cu-xnX">
+                                <rect key="frame" x="115" y="826" width="37" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iSI-Cu-xnX" secondAttribute="height" multiplier="37:31" id="hKt-xU-1lQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="V8H-0j-c1T" eventType="touchUpInside" id="hlp-W9-bdr"/>
+                                    <action selector="goButtonTapped:" destination="V8H-0j-c1T" eventType="touchUpInside" id="Z1y-WN-tWZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F49-4B-w1W">
+                                <rect key="frame" x="349" y="826" width="45" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F49-4B-w1W" secondAttribute="height" multiplier="45:31" id="4hS-2b-q5g"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system"/>
+                                <connections>
+                                    <action selector="safariButtonTapped:" destination="V8H-0j-c1T" eventType="touchUpInside" id="I4T-TV-f8l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="85y-6q-id3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fF6-ew-XPg" firstAttribute="leading" secondItem="IK2-7L-xD4" secondAttribute="leading" id="a6y-g0-JAp"/>
-                            <constraint firstItem="fF6-ew-XPg" firstAttribute="top" secondItem="IK2-7L-xD4" secondAttribute="bottom" id="evP-Zl-FF2"/>
-                            <constraint firstItem="fF6-ew-XPg" firstAttribute="trailing" secondItem="IK2-7L-xD4" secondAttribute="trailing" id="lih-rh-Q7y"/>
+                            <constraint firstItem="iSI-Cu-xnX" firstAttribute="top" secondItem="IK2-7L-xD4" secondAttribute="bottom" constant="8" symbolic="YES" id="42n-dd-O71"/>
+                            <constraint firstItem="IK2-7L-xD4" firstAttribute="leading" secondItem="85y-6q-id3" secondAttribute="leading" id="7fZ-40-RXb"/>
+                            <constraint firstItem="F49-4B-w1W" firstAttribute="trailing" secondItem="Hp7-tx-BU0" secondAttribute="trailingMargin" id="UgQ-gI-tx7"/>
+                            <constraint firstItem="F49-4B-w1W" firstAttribute="top" secondItem="IK2-7L-xD4" secondAttribute="bottom" constant="8" symbolic="YES" id="ZPg-Qw-RM1"/>
+                            <constraint firstItem="ab8-YW-5WQ" firstAttribute="leading" secondItem="Hp7-tx-BU0" secondAttribute="leading" constant="20" id="aJi-JW-GPj"/>
+                            <constraint firstItem="F49-4B-w1W" firstAttribute="leading" secondItem="6R6-HQ-YvG" secondAttribute="trailing" constant="48" id="dib-Tf-Er5"/>
+                            <constraint firstItem="iSI-Cu-xnX" firstAttribute="leading" secondItem="ab8-YW-5WQ" secondAttribute="trailing" constant="58" id="ebP-R2-qJ5"/>
+                            <constraint firstAttribute="trailing" secondItem="IK2-7L-xD4" secondAttribute="trailing" id="fTZ-qG-kzz"/>
+                            <constraint firstItem="ab8-YW-5WQ" firstAttribute="top" secondItem="IK2-7L-xD4" secondAttribute="bottom" constant="8" symbolic="YES" id="nnJ-7q-ON0"/>
                             <constraint firstItem="IK2-7L-xD4" firstAttribute="top" secondItem="85y-6q-id3" secondAttribute="top" id="oV9-3q-dNd"/>
-                            <constraint firstItem="85y-6q-id3" firstAttribute="bottom" secondItem="fF6-ew-XPg" secondAttribute="bottom" constant="10" id="zRy-7T-mSa"/>
-                            <constraint firstItem="fF6-ew-XPg" firstAttribute="centerX" secondItem="Hp7-tx-BU0" secondAttribute="centerX" id="zpL-Z0-E6I"/>
+                            <constraint firstItem="85y-6q-id3" firstAttribute="bottom" secondItem="ab8-YW-5WQ" secondAttribute="bottom" constant="5" id="pTC-P9-pJI"/>
+                            <constraint firstItem="6R6-HQ-YvG" firstAttribute="top" secondItem="IK2-7L-xD4" secondAttribute="bottom" constant="8" symbolic="YES" id="uxD-De-e2a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KMb-4B-wsb">
