@@ -2,19 +2,23 @@ PODS:
   - EAIntroView (2.13.0):
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
+  - SideMenu (6.5.0)
 
 DEPENDENCIES:
   - EAIntroView
+  - SideMenu
 
 SPEC REPOS:
   trunk:
     - EAIntroView
     - EARestrictedScrollView
+    - SideMenu
 
 SPEC CHECKSUMS:
   EAIntroView: 9adedfc6b5c3fd3ebe19766da01dae573e6ce053
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 4f5b3bf287dad66c3ef06bc67e7299e4694ede30
+PODFILE CHECKSUM: a5922fa0343fcc638abd60e9e973492ed7547002
 
 COCOAPODS: 1.11.2

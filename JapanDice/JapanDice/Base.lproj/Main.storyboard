@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iB9-Bb-0YQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iB9-Bb-0YQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,12 +31,14 @@
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8yc-m7-dCK">
                                                 <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <gestureRecognizers/>
                                             </view>
                                             <vibrancyEffect>
                                                 <blurEffect style="regular"/>
                                             </vibrancyEffect>
                                         </visualEffectView>
                                     </subviews>
+                                    <gestureRecognizers/>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -49,7 +51,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="日本" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-SM-g8R">
+                            <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="日本" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-SM-g8R">
                                 <rect key="frame" x="20" y="132" width="374" height="374"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -95,18 +97,12 @@
                             <constraint firstItem="gt7-SM-g8R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="132" id="zlX-bX-m6t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ptw-pm-QKW">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle" catalog="system" id="Ihq-eJ-61d">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="info:" destination="BYZ-38-t0r" id="qnQ-1y-UTP"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Ptw-pm-QKW"/>
                     <connections>
                         <outlet property="button" destination="pEx-5e-vS2" id="ZCg-re-ZeT"/>
                         <outlet property="nameLabel" destination="g4l-aq-gH0" id="tMm-4A-7tk"/>
                         <outlet property="prefecturesImage" destination="gt7-SM-g8R" id="Z5Y-VC-MQM"/>
+                        <segue destination="V8H-0j-c1T" kind="show" identifier="goWeb" id="kJw-r2-Lcq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,7 +112,78 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+            <point key="canvasLocation" x="855" y="98"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="lRV-q0-Jn5">
+            <objects>
+                <viewController storyboardIdentifier="secondViewController" id="V8H-0j-c1T" customClass="WebViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hp7-tx-BU0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-7L-xD4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="720"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF6-ew-XPg">
+                                <rect key="frame" x="0.0" y="808" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fF6-ew-XPg" secondAttribute="height" multiplier="207:22" id="NVC-34-sHk"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" image="chevron.left" catalog="system" width="66" id="LaJ-jY-CXa">
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="V8H-0j-c1T" id="rC7-wS-YsC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="chevron.right" catalog="system" width="137" id="cd7-rs-6yG">
+                                        <connections>
+                                            <action selector="goButtonTapped:" destination="V8H-0j-c1T" id="HuT-NZ-uXE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" width="125" id="AFU-rh-n7i">
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="V8H-0j-c1T" id="tWQ-t4-PWD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="safari" catalog="system" width="131.5" id="M6C-sr-xnr">
+                                        <connections>
+                                            <action selector="safariButtonTapped:" destination="V8H-0j-c1T" id="iAR-9f-FTX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="85y-6q-id3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fF6-ew-XPg" firstAttribute="leading" secondItem="IK2-7L-xD4" secondAttribute="leading" id="a6y-g0-JAp"/>
+                            <constraint firstItem="fF6-ew-XPg" firstAttribute="top" secondItem="IK2-7L-xD4" secondAttribute="bottom" id="evP-Zl-FF2"/>
+                            <constraint firstItem="fF6-ew-XPg" firstAttribute="trailing" secondItem="IK2-7L-xD4" secondAttribute="trailing" id="lih-rh-Q7y"/>
+                            <constraint firstItem="IK2-7L-xD4" firstAttribute="top" secondItem="85y-6q-id3" secondAttribute="top" id="oV9-3q-dNd"/>
+                            <constraint firstItem="85y-6q-id3" firstAttribute="bottom" secondItem="fF6-ew-XPg" secondAttribute="bottom" constant="10" id="zRy-7T-mSa"/>
+                            <constraint firstItem="fF6-ew-XPg" firstAttribute="centerX" secondItem="Hp7-tx-BU0" secondAttribute="centerX" id="zpL-Z0-E6I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KMb-4B-wsb">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="goforward" catalog="system" id="dh1-gE-A7I">
+                            <connections>
+                                <action selector="reloadButtonTapped:" destination="V8H-0j-c1T" id="aBB-Sb-J5z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="IK2-7L-xD4" id="aYu-GK-DSx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wv8-mM-EJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1eQ-nn-rbb">
@@ -139,7 +206,11 @@
     </scenes>
     <resources>
         <image name="bg3" width="2000" height="2402"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="goforward" catalog="system" width="121" height="128"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="日本" width="960" height="960"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
