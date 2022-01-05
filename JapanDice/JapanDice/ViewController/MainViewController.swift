@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var prefecturesImage: UIImageView!
     @IBOutlet weak var button: UIButton!
     
-    let diceArray = ["北海道", "青森", "秋田", "宮城", "福島", "山形", "岩手", "千葉", "埼玉", "群馬", "栃木", "茨城", "石川", "富山", "新潟", "神奈川", "東京", "静岡", "岐阜", "長野", "山梨", "福井", "大阪", "京都", "滋賀", "三重", "愛知", "島根", "鳥取", "和歌山", "奈良", "兵庫", "香川", "徳島", "山口", "広島", "岡山", "長崎", "佐賀", "福岡", "高知", "愛媛", "沖縄", "鹿児島", "宮崎", "大分", "熊本"]
+    let diceArray = ["北海道", "沖縄", "青森", "岩手", "秋田", "宮城", "山形", "福島", "茨城", "栃木", "群馬", "埼玉", "千葉", "東京", "神奈川", "山梨", "長野", "新潟", "富山", "石川", "福井", "静岡", "愛知", "岐阜", "三重", "滋賀", "大阪", "京都", "兵庫", "奈良", "和歌山", "鳥取", "島根", "岡山", "広島", "山口", "香川", "愛媛", "徳島", "高知", "福岡", "佐賀", "長崎", "熊本", "大分", "宮崎", "鹿児島"]
     
     
     
@@ -64,10 +64,6 @@ class MainViewController: UIViewController {
             let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! WebViewController
             nextVC.reciever = urlString
             self.present(nextVC, animated: true, completion: nil)
-            //safariを開かせる
-//            let url = NSURL(string: urlString)
-//            if UIApplication.shared.canOpenURL(url! as URL){
-//                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
         }
     
         let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel) { (action: UIAlertAction) in
