@@ -97,15 +97,12 @@
                             <constraint firstItem="gt7-SM-g8R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="132" id="zlX-bX-m6t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ptw-pm-QKW">
-                        <barButtonItem key="leftBarButtonItem" title="設定" id="2pk-hA-4dK">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Ptw-pm-QKW"/>
                     <connections>
                         <outlet property="button" destination="pEx-5e-vS2" id="ZCg-re-ZeT"/>
                         <outlet property="nameLabel" destination="g4l-aq-gH0" id="tMm-4A-7tk"/>
                         <outlet property="prefecturesImage" destination="gt7-SM-g8R" id="Z5Y-VC-MQM"/>
+                        <segue destination="V8H-0j-c1T" kind="presentation" identifier="goWeb" id="kJw-r2-Lcq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,6 +113,35 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="855" y="98"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="lRV-q0-Jn5">
+            <objects>
+                <viewController storyboardIdentifier="secondViewController" id="V8H-0j-c1T" customClass="WebViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hp7-tx-BU0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Q7-8h-UcB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="85y-6q-id3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="3Q7-8h-UcB" id="OiF-8c-viZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wv8-mM-EJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1eQ-nn-rbb">
