@@ -7,221 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		057B453F4AE14D10EA77D38FA1A0B8FB /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C4B00045FBCED88FBE573F4228A91 /* SideMenuPresentationController.swift */; };
-		0BD2277DED5E33B589F84CA546007F54 /* EARestrictedScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDCD3BB521E9CF7A3089AA32BC90E4F /* EARestrictedScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F30054B680E58A575CFA93D249EDD66 /* Pods-JapanDice-JapanDiceUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5534A7863ACE90AE95D67269E520F5 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C7EF6EE6A417B01AB8E17D3D6F7CD75 /* EAIntroView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE422CC764DA8C4479D4AF55781BEB /* EAIntroView-dummy.m */; };
-		1F0DDBBAF86A028D6D60A7E10B4D3634 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD848A8B3FFD27EF1EA29BCAD5552C8 /* SideMenu-dummy.m */; };
-		23065E7421D23F849A48162427EF1054 /* Pods-JapanDice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1389AC4236F9B7AEDBEA71CF57BE46C /* Pods-JapanDice-dummy.m */; };
-		380B7F7550BF2F4454C14B459ACFB229 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5197B52E16C9FC3C6A554F320EEDDB0F /* EAIntroView.m */; };
-		3817F4830A10E51D20B72530EF6A56D2 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E30CF2421E4A3126709DD246A083D /* SideMenuTransitionController.swift */; };
-		3B4BAA13D1881F779DB3BFF1A0F02D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4AB8C0E0C0936B0E99EC0333EEDEEF7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5587C359D9C8789950E7F6585C2292E7 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE3042557EF7E467F0F67200E495C2 /* SideMenuPresentationStyle.swift */; };
-		74106BDED4B8B2281DFE4BE5E109D847 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC4B51FF8464D7819F8EEB9FED5ED0 /* Initializable.swift */; };
-		887D7E546D6837CC964318D1B0C842D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8B999A799D3D0B9987B4FF862BE378AE /* Pods-JapanDiceTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FD0A847B736E672B586C02BBF7C411 /* Pods-JapanDiceTests-dummy.m */; };
-		9E9F19E0120EA3C46967C28E637F52C8 /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85624C496ADF21FB32DDCD1E6EFC68 /* SideMenuNavigationController.swift */; };
-		A466E075312C8FA95516F4F00D225B68 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE94418D539861D6DEB2EFB5AB6B90 /* EAIntroPage.m */; };
-		B716456352FB225742266F3937CF4A40 /* EAIntroPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 40347F8082F7907427B70994A47F3B52 /* EAIntroPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B804587E525773FCA9698855B2C752DC /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364BEA1D2ADA70F114271E6D39C301F /* SideMenuAnimationController.swift */; };
-		BC1DE6D74B99B4B6EABBDBAD317E7A9F /* EARestrictedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7F73E8E139FF640190AC7E743C0398 /* EARestrictedScrollView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BC9C2E663681EDDBFE985034DCC7AAAF /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4A1FAE96250BC14131103165C7C2A /* UITableViewVibrantCell.swift */; };
-		BE79F903F87E7D5918C6414E6203743E /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F7A2C4938FA6F54E24828D795E216 /* Print.swift */; };
-		C7A2EFC4F2088C3D6AACC9E687E8DF2E /* EAIntroView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C30EBF64B8CF8BE7F04CBED38AE070C /* EAIntroView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE64B14B3EE20ECC21F4164A67B2CAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D118701C745C857840D0F936130908E1 /* Pods-JapanDice-JapanDiceUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D54F1844C76FEBC856F6446710F95 /* Pods-JapanDice-JapanDiceUITests-dummy.m */; };
-		D3BE0026C39E4B360BBDA0D5C57DD25D /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01C0428F2590EBD2D887349A3BD04E /* Deprecations.swift */; };
-		D73079D3EA77F3C4E5563E8A6D4B90BC /* EARestrictedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA703D3D3FC359CA8F52C35E5C5A41C7 /* EARestrictedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAD5950A205347FCDBD3751604472431 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987E0117756A79CD5C5D00ADE99844F /* Protected.swift */; };
+		1DDC3266D55AAB0C341D60CC8F959A40 /* Pods-JapanDice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9AB8231A52A08C6B2A115EFA2D1BE3 /* Pods-JapanDice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F8979ECF070FD92BD301BF7C550D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6995AA1C3682AEEB5273F6C335737AD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8B999A799D3D0B9987B4FF862BE378AE /* Pods-JapanDiceTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03201B98A839A67C0B2D410E1E8FB070 /* Pods-JapanDiceTests-dummy.m */; };
+		8BA26142675661F4DFAA02602C67880B /* Pods-JapanDice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D3646769B38627241FD07602AB1D5 /* Pods-JapanDice-dummy.m */; };
+		D5A06746AE0163BB0B2AA9EA44098916 /* Pods-JapanDice-JapanDiceUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AFA62201C3B3854B9DFC5D8A089C94 /* Pods-JapanDice-JapanDiceUITests-dummy.m */; };
 		E1553467D7093C8B24C74C3F75A536DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E492118902FD6886AB533F2F48D13057 /* Pods-JapanDiceTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFCA5591F5270307E2D058A1173588C /* Pods-JapanDiceTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E56EEF71CC5AF0DA40228F2CA67B4BA0 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CC92FF941409C11132C29CDAFE3215 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5DEA8F68EFAFD7DECA0FC9C5BB2142E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E709C98B763E8065628D8E88715E0BF8 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A02E503FC71F347CD22E288CC4F1C /* SideMenuManager.swift */; };
-		E72252B09CC270B50217CA6AEABD620A /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C53AC105305B2B39BA727AEF88B7E7F /* SideMenuPushCoordinator.swift */; };
-		E97C7A323474D0205E872AE7BC773650 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA14295EB202B8AE1D48F215B2D92BCC /* SideMenuInteractionController.swift */; };
-		F257E4136D9EBC311AB79DCA6DC56CF5 /* Pods-JapanDice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8A93F482A7BF758A48E72B39A2ADE9 /* Pods-JapanDice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F28D439429A375B6D4FCD037ED317CD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3702EDE25BA7AC3BC75128CFDCE4FA /* Extensions.swift */; };
-		F5B8960DAF6FABF4DEF640E5A0B3EA58 /* EARestrictedScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F13830B78B44D595905EAF57B95E899B /* EARestrictedScrollView-dummy.m */; };
-		FD760D1243B1AE6412C00A55541405A9 /* EAIntroView.h in Headers */ = {isa = PBXBuildFile; fileRef = 556A44D234E2EED7C484A65E6EB788CB /* EAIntroView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E492118902FD6886AB533F2F48D13057 /* Pods-JapanDiceTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8ED6DE2C54E1C5B905E3829C083358 /* Pods-JapanDiceTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3CE6A04550BFEECE44189500D2EA1FE /* Pods-JapanDice-JapanDiceUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF933E1C61378E6FCD83BD9009C7C71 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		25D678478F687A9DF7350219209E3F2A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
-			remoteInfo = SideMenu;
-		};
-		3653A68CBAD7D4BE3B3A57216ECF83D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83EF4E94EC7CCDDCF4BC86C414A2963A;
-			remoteInfo = EARestrictedScrollView;
-		};
-		5AD03DF7344B48E1252BA7FCE795FCC7 /* PBXContainerItemProxy */ = {
+		07273E67B1DE3AD2F31469E446D30B65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B838D4A31139095456092E2507CA5FE8;
 			remoteInfo = "Pods-JapanDice";
 		};
-		64191D0F9B5C134A6F11D7DEEC211F67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC5D5F25300964D7791790EA262460A0;
-			remoteInfo = EAIntroView;
-		};
-		914BFA8F4E746FA00718619D5DC77C0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83EF4E94EC7CCDDCF4BC86C414A2963A;
-			remoteInfo = EARestrictedScrollView;
-		};
-		AEC776593CEAA1F3AFB54066393956B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
-			remoteInfo = SideMenu;
-		};
-		B3A8C935F624283779C82550D44D1D14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC5D5F25300964D7791790EA262460A0;
-			remoteInfo = EAIntroView;
-		};
-		C71EFF399A5595DB9B0EFAF23C9EA077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83EF4E94EC7CCDDCF4BC86C414A2963A;
-			remoteInfo = EARestrictedScrollView;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		029101A201D4DEF9E97EB65497DC88C0 /* Pods-JapanDiceTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDiceTests-Info.plist"; sourceTree = "<group>"; };
-		048E271FE6194F731641663C8975D7D6 /* Pods-JapanDiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDiceTests.debug.xcconfig"; sourceTree = "<group>"; };
-		050FA8718C268ACEC759A9503471E87C /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		0987E0117756A79CD5C5D00ADE99844F /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
-		139B55DC66AEB32EF77F2F564071DE67 /* Pods-JapanDice-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JapanDice-frameworks.sh"; sourceTree = "<group>"; };
-		2ADD5DA32C3A1E0083E0107A14743F55 /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice-JapanDiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C53AC105305B2B39BA727AEF88B7E7F /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
-		2CFE3042557EF7E467F0F67200E495C2 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
-		2E8A93F482A7BF758A48E72B39A2ADE9 /* Pods-JapanDice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapanDice-umbrella.h"; sourceTree = "<group>"; };
-		2FEF647D33ACF1375F6AED8AE1022627 /* Pods-JapanDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice.release.xcconfig"; sourceTree = "<group>"; };
-		2FF6CCEB69995A0329C8827F23A32688 /* Pods-JapanDiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDiceTests.release.xcconfig"; sourceTree = "<group>"; };
-		30DE0F06999C96A781DBCDF1FD4F17EC /* Pods-JapanDice-JapanDiceUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapanDice-JapanDiceUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		319D06AA0D1D0BA345459C039040A1ED /* SideMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		334C15E47530A5D373ED55EB122410D3 /* Pods-JapanDiceTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapanDiceTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		36B5D0A5CFD70D04BB3BE6274E768710 /* EAIntroView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EAIntroView-prefix.pch"; sourceTree = "<group>"; };
-		3FFCA5591F5270307E2D058A1173588C /* Pods-JapanDiceTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapanDiceTests-umbrella.h"; sourceTree = "<group>"; };
-		40347F8082F7907427B70994A47F3B52 /* EAIntroPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EAIntroPage.h; path = EAIntroView/EAIntroPage.h; sourceTree = "<group>"; };
-		46B7EB820A15A5A0D119E2A004F87E38 /* EAIntroView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EAIntroView.release.xcconfig; sourceTree = "<group>"; };
-		48A62930BA105B8543F69BB92CE41F6E /* Pods-JapanDice-JapanDiceUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-JapanDiceUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4C30EBF64B8CF8BE7F04CBED38AE070C /* EAIntroView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EAIntroView-umbrella.h"; sourceTree = "<group>"; };
-		5197B52E16C9FC3C6A554F320EEDDB0F /* EAIntroView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EAIntroView.m; path = EAIntroView/EAIntroView.m; sourceTree = "<group>"; };
-		53553F4FD6B73FF4C5C7D4184701E0F2 /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
-		556A44D234E2EED7C484A65E6EB788CB /* EAIntroView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EAIntroView.h; path = EAIntroView/EAIntroView.h; sourceTree = "<group>"; };
-		559C4B00045FBCED88FBE573F4228A91 /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
-		59D55A15C8F57454AE9A33AF49368F51 /* EAIntroView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EAIntroView.debug.xcconfig; sourceTree = "<group>"; };
-		59FC05AB9F021A269DDA91F4C8BC785C /* Pods-JapanDice-JapanDiceUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-JapanDiceUITests-Info.plist"; sourceTree = "<group>"; };
-		5C3702EDE25BA7AC3BC75128CFDCE4FA /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
-		62C488A7021101DFAD691E53D245552A /* EAIntroView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EAIntroView.modulemap; sourceTree = "<group>"; };
+		03201B98A839A67C0B2D410E1E8FB070 /* Pods-JapanDiceTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDiceTests-dummy.m"; sourceTree = "<group>"; };
+		06475877A5E6BBF7A5DCC7D1EA998B08 /* Pods-JapanDiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D8ED6DE2C54E1C5B905E3829C083358 /* Pods-JapanDiceTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapanDiceTests-umbrella.h"; sourceTree = "<group>"; };
+		1F40BED8F32FD0E9452CE4235B727816 /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice-JapanDiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		20BC99D82A9FF0D4D6EE54FD7146BB2B /* Pods-JapanDice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapanDice-acknowledgements.markdown"; sourceTree = "<group>"; };
+		219510F8BD9D9A15768CF7431AAD4556 /* Pods-JapanDice-JapanDiceUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapanDice-JapanDiceUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		281A7E1CB729AEDA1595AE158531195D /* Pods-JapanDiceTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDiceTests-Info.plist"; sourceTree = "<group>"; };
+		29D4204472E61456FC8A5D4C922A5399 /* Pods-JapanDiceTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JapanDiceTests.modulemap"; sourceTree = "<group>"; };
+		2DF732F8C90F9397C5D993155D3CB112 /* Pods-JapanDice-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-Info.plist"; sourceTree = "<group>"; };
+		3ADA665F59762CED6264D2AA184C8590 /* Pods-JapanDice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JapanDice.modulemap"; sourceTree = "<group>"; };
+		499A1DAF4E512F1D99E7832DC0F75EE0 /* Pods-JapanDice-JapanDiceUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-JapanDiceUITests-Info.plist"; sourceTree = "<group>"; };
+		4A7D3646769B38627241FD07602AB1D5 /* Pods-JapanDice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDice-dummy.m"; sourceTree = "<group>"; };
+		4AC64744D32314916454D2926B415788 /* Pods-JapanDice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-acknowledgements.plist"; sourceTree = "<group>"; };
+		57AAB148733CC3B5E8310C578AE2ADEB /* Pods-JapanDiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A91867B91BC7BE19D797C7418B38E0E /* Pods-JapanDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice.release.xcconfig"; sourceTree = "<group>"; };
+		65D62F02A839FE501A582A9D8CE4D524 /* Pods-JapanDice-JapanDiceUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-JapanDiceUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6EACFE9F9F4A554CD361D071BF5278D9 /* Pods-JapanDice-JapanDiceUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JapanDice-JapanDiceUITests"; path = Pods_JapanDice_JapanDiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		700C8B7192729A58393EAB422E76413A /* Pods-JapanDiceTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDiceTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F07E5D29E2CA7244F35A4C789AF60DB /* Pods-JapanDiceTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDiceTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7226A3C18E024DF70C95136139B46658 /* Pods-JapanDiceTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JapanDiceTests"; path = Pods_JapanDiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74D344DF2F7ECBCCB620C31347154D7F /* EARestrictedScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EARestrictedScrollView.debug.xcconfig; sourceTree = "<group>"; };
-		7A01C0428F2590EBD2D887349A3BD04E /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
-		7A5534A7863ACE90AE95D67269E520F5 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapanDice-JapanDiceUITests-umbrella.h"; sourceTree = "<group>"; };
-		7CFE422CC764DA8C4479D4AF55781BEB /* EAIntroView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EAIntroView-dummy.m"; sourceTree = "<group>"; };
-		80E1DECC1847A176F35EA6A73511CE14 /* Pods-JapanDice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-acknowledgements.plist"; sourceTree = "<group>"; };
-		84F423E96683C1FDC0949F4FD5C0E682 /* Pods-JapanDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice.debug.xcconfig"; sourceTree = "<group>"; };
-		862E30CF2421E4A3126709DD246A083D /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
-		888EEF6D7380BD4B172EC56AC718BA4D /* EARestrictedScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EARestrictedScrollView.modulemap; sourceTree = "<group>"; };
-		8BC9B818E72D70B990E3BB825700107C /* Pods-JapanDice-JapanDiceUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JapanDice-JapanDiceUITests-frameworks.sh"; sourceTree = "<group>"; };
-		8CF4AADB05864933F1705AF5E7343421 /* EARestrictedScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EARestrictedScrollView-prefix.pch"; sourceTree = "<group>"; };
-		98D5ACE4702CB5737267899A4689B703 /* EAIntroView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EAIntroView-Info.plist"; sourceTree = "<group>"; };
-		9B85624C496ADF21FB32DDCD1E6EFC68 /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
+		8C9AB8231A52A08C6B2A115EFA2D1BE3 /* Pods-JapanDice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapanDice-umbrella.h"; sourceTree = "<group>"; };
+		9330C746EE800EEFCB9C573DBFFE6DB2 /* Pods-JapanDiceTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapanDiceTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EARestrictedScrollView; path = EARestrictedScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1389AC4236F9B7AEDBEA71CF57BE46C /* Pods-JapanDice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDice-dummy.m"; sourceTree = "<group>"; };
-		A3E4A1FAE96250BC14131103165C7C2A /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
-		AA703D3D3FC359CA8F52C35E5C5A41C7 /* EARestrictedScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EARestrictedScrollView.h; path = EARestrictedScrollView/EARestrictedScrollView.h; sourceTree = "<group>"; };
-		AAD848A8B3FFD27EF1EA29BCAD5552C8 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		AD656E11B5C2442C789DD578E1E9C6D7 /* Pods-JapanDice-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-Info.plist"; sourceTree = "<group>"; };
-		B02779A8EEC23B22CDEA8609E688C92A /* Pods-JapanDice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JapanDice.modulemap"; sourceTree = "<group>"; };
-		B2FD0A847B736E672B586C02BBF7C411 /* Pods-JapanDiceTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDiceTests-dummy.m"; sourceTree = "<group>"; };
-		B38C44D2969749B4FCE6851041BCFC56 /* EARestrictedScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EARestrictedScrollView-Info.plist"; sourceTree = "<group>"; };
-		BB7F73E8E139FF640190AC7E743C0398 /* EARestrictedScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EARestrictedScrollView.m; path = EARestrictedScrollView/EARestrictedScrollView.m; sourceTree = "<group>"; };
-		BCDCD3BB521E9CF7A3089AA32BC90E4F /* EARestrictedScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EARestrictedScrollView-umbrella.h"; sourceTree = "<group>"; };
+		A4AFA62201C3B3854B9DFC5D8A089C94 /* Pods-JapanDice-JapanDiceUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDice-JapanDiceUITests-dummy.m"; sourceTree = "<group>"; };
+		B94EE17699A1860E8AEBBDD65F343D83 /* Pods-JapanDice-JapanDiceUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JapanDice-JapanDiceUITests.modulemap"; sourceTree = "<group>"; };
 		C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods-JapanDice */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JapanDice"; path = Pods_JapanDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C99A53CC435231F9067FC4C840A8878B /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		D08F4230995A38B138B9FD7AC1FA979F /* Pods-JapanDiceTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JapanDiceTests.modulemap"; sourceTree = "<group>"; };
-		D364BEA1D2ADA70F114271E6D39C301F /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
-		DA14295EB202B8AE1D48F215B2D92BCC /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
-		DBE1AF7F22622658296D293D18E5D8D2 /* Pods-JapanDice-JapanDiceUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JapanDice-JapanDiceUITests.modulemap"; sourceTree = "<group>"; };
-		E24F7A2C4938FA6F54E24828D795E216 /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
-		E2BE94418D539861D6DEB2EFB5AB6B90 /* EAIntroPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EAIntroPage.m; path = EAIntroView/EAIntroPage.m; sourceTree = "<group>"; };
-		E5AC4B51FF8464D7819F8EEB9FED5ED0 /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
-		E5EEAAF533593968C9B52D53D638D61C /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice-JapanDiceUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EAD56314D2E76334C6B89DA454305472 /* Pods-JapanDice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapanDice-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ED0A02E503FC71F347CD22E288CC4F1C /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
-		ED7043C69F6B953E42731B847B431262 /* EARestrictedScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EARestrictedScrollView.release.xcconfig; sourceTree = "<group>"; };
-		F05934B4CF19F09F8C7C0BA818166097 /* SideMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.debug.xcconfig; sourceTree = "<group>"; };
-		F13830B78B44D595905EAF57B95E899B /* EARestrictedScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EARestrictedScrollView-dummy.m"; sourceTree = "<group>"; };
-		F2CC92FF941409C11132C29CDAFE3215 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EAIntroView; path = EAIntroView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAE2206BF7EEEA67F9DC718D1A5162AD /* SideMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.release.xcconfig; sourceTree = "<group>"; };
-		FF1D54F1844C76FEBC856F6446710F95 /* Pods-JapanDice-JapanDiceUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDice-JapanDiceUITests-dummy.m"; sourceTree = "<group>"; };
+		CEF933E1C61378E6FCD83BD9009C7C71 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapanDice-JapanDiceUITests-umbrella.h"; sourceTree = "<group>"; };
+		F570E1680A80C268D865148DE3AB4515 /* Pods-JapanDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice.debug.xcconfig"; sourceTree = "<group>"; };
+		F8BC93279A0772AC5E4FBEAC23F66285 /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice-JapanDiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4516041A87B7DCCBA296263148710A61 /* Frameworks */ = {
+		137876F2F956B0598918354CC054E34B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE64B14B3EE20ECC21F4164A67B2CAB9 /* Foundation.framework in Frameworks */,
+				68F8979ECF070FD92BD301BF7C550D08 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54BD9DF4F1707C62E08ABC76BFB60E37 /* Frameworks */ = {
+		939EB5AA2B288D88BE4B2DF79D2ACAFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5DEA8F68EFAFD7DECA0FC9C5BB2142E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5DC25AA7986F2BF0AC82E6132A31A66D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				887D7E546D6837CC964318D1B0C842D9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E7960F329A08E1D54A349A4902D40D5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B4BAA13D1881F779DB3BFF1A0F02D49 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93C001AEC8E35A2C8117710B739F6E0B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AB8C0E0C0936B0E99EC0333EEDEEF7D /* Foundation.framework in Frameworks */,
+				6995AA1C3682AEEB5273F6C335737AD2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,83 +88,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22A24248AE7B5AB12EC3B2481781CCA4 /* Pods-JapanDice */ = {
+		18B037363B50ADB8513051AA522ECA93 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B02779A8EEC23B22CDEA8609E688C92A /* Pods-JapanDice.modulemap */,
-				EAD56314D2E76334C6B89DA454305472 /* Pods-JapanDice-acknowledgements.markdown */,
-				80E1DECC1847A176F35EA6A73511CE14 /* Pods-JapanDice-acknowledgements.plist */,
-				A1389AC4236F9B7AEDBEA71CF57BE46C /* Pods-JapanDice-dummy.m */,
-				139B55DC66AEB32EF77F2F564071DE67 /* Pods-JapanDice-frameworks.sh */,
-				AD656E11B5C2442C789DD578E1E9C6D7 /* Pods-JapanDice-Info.plist */,
-				2E8A93F482A7BF758A48E72B39A2ADE9 /* Pods-JapanDice-umbrella.h */,
-				84F423E96683C1FDC0949F4FD5C0E682 /* Pods-JapanDice.debug.xcconfig */,
-				2FEF647D33ACF1375F6AED8AE1022627 /* Pods-JapanDice.release.xcconfig */,
+				4FA2000408011E329AE7443DD4001A38 /* Pods-JapanDice */,
+				A13BB8943DE6B83EA6D0D33EFC064F20 /* Pods-JapanDice-JapanDiceUITests */,
+				3B12B8680D8E56E49C9FD51BB608F450 /* Pods-JapanDiceTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B12B8680D8E56E49C9FD51BB608F450 /* Pods-JapanDiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				29D4204472E61456FC8A5D4C922A5399 /* Pods-JapanDiceTests.modulemap */,
+				9330C746EE800EEFCB9C573DBFFE6DB2 /* Pods-JapanDiceTests-acknowledgements.markdown */,
+				6F07E5D29E2CA7244F35A4C789AF60DB /* Pods-JapanDiceTests-acknowledgements.plist */,
+				03201B98A839A67C0B2D410E1E8FB070 /* Pods-JapanDiceTests-dummy.m */,
+				281A7E1CB729AEDA1595AE158531195D /* Pods-JapanDiceTests-Info.plist */,
+				1D8ED6DE2C54E1C5B905E3829C083358 /* Pods-JapanDiceTests-umbrella.h */,
+				57AAB148733CC3B5E8310C578AE2ADEB /* Pods-JapanDiceTests.debug.xcconfig */,
+				06475877A5E6BBF7A5DCC7D1EA998B08 /* Pods-JapanDiceTests.release.xcconfig */,
+			);
+			name = "Pods-JapanDiceTests";
+			path = "Target Support Files/Pods-JapanDiceTests";
+			sourceTree = "<group>";
+		};
+		4FA2000408011E329AE7443DD4001A38 /* Pods-JapanDice */ = {
+			isa = PBXGroup;
+			children = (
+				3ADA665F59762CED6264D2AA184C8590 /* Pods-JapanDice.modulemap */,
+				20BC99D82A9FF0D4D6EE54FD7146BB2B /* Pods-JapanDice-acknowledgements.markdown */,
+				4AC64744D32314916454D2926B415788 /* Pods-JapanDice-acknowledgements.plist */,
+				4A7D3646769B38627241FD07602AB1D5 /* Pods-JapanDice-dummy.m */,
+				2DF732F8C90F9397C5D993155D3CB112 /* Pods-JapanDice-Info.plist */,
+				8C9AB8231A52A08C6B2A115EFA2D1BE3 /* Pods-JapanDice-umbrella.h */,
+				F570E1680A80C268D865148DE3AB4515 /* Pods-JapanDice.debug.xcconfig */,
+				5A91867B91BC7BE19D797C7418B38E0E /* Pods-JapanDice.release.xcconfig */,
 			);
 			name = "Pods-JapanDice";
 			path = "Target Support Files/Pods-JapanDice";
-			sourceTree = "<group>";
-		};
-		2C59D33904BF368ED4BB170997466987 /* EARestrictedScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				AA703D3D3FC359CA8F52C35E5C5A41C7 /* EARestrictedScrollView.h */,
-				BB7F73E8E139FF640190AC7E743C0398 /* EARestrictedScrollView.m */,
-				31DD442CFD7990B781A24E445C6A2DA8 /* Support Files */,
-			);
-			name = EARestrictedScrollView;
-			path = EARestrictedScrollView;
-			sourceTree = "<group>";
-		};
-		31DD442CFD7990B781A24E445C6A2DA8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				888EEF6D7380BD4B172EC56AC718BA4D /* EARestrictedScrollView.modulemap */,
-				F13830B78B44D595905EAF57B95E899B /* EARestrictedScrollView-dummy.m */,
-				B38C44D2969749B4FCE6851041BCFC56 /* EARestrictedScrollView-Info.plist */,
-				8CF4AADB05864933F1705AF5E7343421 /* EARestrictedScrollView-prefix.pch */,
-				BCDCD3BB521E9CF7A3089AA32BC90E4F /* EARestrictedScrollView-umbrella.h */,
-				74D344DF2F7ECBCCB620C31347154D7F /* EARestrictedScrollView.debug.xcconfig */,
-				ED7043C69F6B953E42731B847B431262 /* EARestrictedScrollView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/EARestrictedScrollView";
-			sourceTree = "<group>";
-		};
-		425281D8C925DEA04224A8F7A9838FEF /* EAIntroView */ = {
-			isa = PBXGroup;
-			children = (
-				40347F8082F7907427B70994A47F3B52 /* EAIntroPage.h */,
-				E2BE94418D539861D6DEB2EFB5AB6B90 /* EAIntroPage.m */,
-				556A44D234E2EED7C484A65E6EB788CB /* EAIntroView.h */,
-				5197B52E16C9FC3C6A554F320EEDDB0F /* EAIntroView.m */,
-				878BD03D83510DC271C35017A1762F55 /* Support Files */,
-			);
-			name = EAIntroView;
-			path = EAIntroView;
-			sourceTree = "<group>";
-		};
-		5155A2E905D4444F2819D4955A0565DC /* SideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				7A01C0428F2590EBD2D887349A3BD04E /* Deprecations.swift */,
-				5C3702EDE25BA7AC3BC75128CFDCE4FA /* Extensions.swift */,
-				E5AC4B51FF8464D7819F8EEB9FED5ED0 /* Initializable.swift */,
-				E24F7A2C4938FA6F54E24828D795E216 /* Print.swift */,
-				0987E0117756A79CD5C5D00ADE99844F /* Protected.swift */,
-				D364BEA1D2ADA70F114271E6D39C301F /* SideMenuAnimationController.swift */,
-				DA14295EB202B8AE1D48F215B2D92BCC /* SideMenuInteractionController.swift */,
-				ED0A02E503FC71F347CD22E288CC4F1C /* SideMenuManager.swift */,
-				9B85624C496ADF21FB32DDCD1E6EFC68 /* SideMenuNavigationController.swift */,
-				559C4B00045FBCED88FBE573F4228A91 /* SideMenuPresentationController.swift */,
-				2CFE3042557EF7E467F0F67200E495C2 /* SideMenuPresentationStyle.swift */,
-				2C53AC105305B2B39BA727AEF88B7E7F /* SideMenuPushCoordinator.swift */,
-				862E30CF2421E4A3126709DD246A083D /* SideMenuTransitionController.swift */,
-				A3E4A1FAE96250BC14131103165C7C2A /* UITableViewVibrantCell.swift */,
-				6EF68C7D7DF34D0CADD2863A09751876 /* Support Files */,
-			);
-			name = SideMenu;
-			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -323,60 +138,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6EF68C7D7DF34D0CADD2863A09751876 /* Support Files */ = {
+		A13BB8943DE6B83EA6D0D33EFC064F20 /* Pods-JapanDice-JapanDiceUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C99A53CC435231F9067FC4C840A8878B /* SideMenu.modulemap */,
-				AAD848A8B3FFD27EF1EA29BCAD5552C8 /* SideMenu-dummy.m */,
-				53553F4FD6B73FF4C5C7D4184701E0F2 /* SideMenu-Info.plist */,
-				050FA8718C268ACEC759A9503471E87C /* SideMenu-prefix.pch */,
-				F2CC92FF941409C11132C29CDAFE3215 /* SideMenu-umbrella.h */,
-				F05934B4CF19F09F8C7C0BA818166097 /* SideMenu.debug.xcconfig */,
-				FAE2206BF7EEEA67F9DC718D1A5162AD /* SideMenu.release.xcconfig */,
+				B94EE17699A1860E8AEBBDD65F343D83 /* Pods-JapanDice-JapanDiceUITests.modulemap */,
+				219510F8BD9D9A15768CF7431AAD4556 /* Pods-JapanDice-JapanDiceUITests-acknowledgements.markdown */,
+				65D62F02A839FE501A582A9D8CE4D524 /* Pods-JapanDice-JapanDiceUITests-acknowledgements.plist */,
+				A4AFA62201C3B3854B9DFC5D8A089C94 /* Pods-JapanDice-JapanDiceUITests-dummy.m */,
+				499A1DAF4E512F1D99E7832DC0F75EE0 /* Pods-JapanDice-JapanDiceUITests-Info.plist */,
+				CEF933E1C61378E6FCD83BD9009C7C71 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */,
+				1F40BED8F32FD0E9452CE4235B727816 /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */,
+				F8BC93279A0772AC5E4FBEAC23F66285 /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SideMenu";
+			name = "Pods-JapanDice-JapanDiceUITests";
+			path = "Target Support Files/Pods-JapanDice-JapanDiceUITests";
 			sourceTree = "<group>";
 		};
-		74F2C8D899A9D9EC33507754AE827773 /* Pods */ = {
+		B7359D10B9C3D4F59E36BC5740FCA5B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				425281D8C925DEA04224A8F7A9838FEF /* EAIntroView */,
-				2C59D33904BF368ED4BB170997466987 /* EARestrictedScrollView */,
-				5155A2E905D4444F2819D4955A0565DC /* SideMenu */,
+				C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods-JapanDice */,
+				6EACFE9F9F4A554CD361D071BF5278D9 /* Pods-JapanDice-JapanDiceUITests */,
+				7226A3C18E024DF70C95136139B46658 /* Pods-JapanDiceTests */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		878BD03D83510DC271C35017A1762F55 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				62C488A7021101DFAD691E53D245552A /* EAIntroView.modulemap */,
-				7CFE422CC764DA8C4479D4AF55781BEB /* EAIntroView-dummy.m */,
-				98D5ACE4702CB5737267899A4689B703 /* EAIntroView-Info.plist */,
-				36B5D0A5CFD70D04BB3BE6274E768710 /* EAIntroView-prefix.pch */,
-				4C30EBF64B8CF8BE7F04CBED38AE070C /* EAIntroView-umbrella.h */,
-				59D55A15C8F57454AE9A33AF49368F51 /* EAIntroView.debug.xcconfig */,
-				46B7EB820A15A5A0D119E2A004F87E38 /* EAIntroView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/EAIntroView";
-			sourceTree = "<group>";
-		};
-		8A9F68FF7AF146B26AE85F858B1BFE48 /* Pods-JapanDiceTests */ = {
-			isa = PBXGroup;
-			children = (
-				D08F4230995A38B138B9FD7AC1FA979F /* Pods-JapanDiceTests.modulemap */,
-				334C15E47530A5D373ED55EB122410D3 /* Pods-JapanDiceTests-acknowledgements.markdown */,
-				700C8B7192729A58393EAB422E76413A /* Pods-JapanDiceTests-acknowledgements.plist */,
-				B2FD0A847B736E672B586C02BBF7C411 /* Pods-JapanDiceTests-dummy.m */,
-				029101A201D4DEF9E97EB65497DC88C0 /* Pods-JapanDiceTests-Info.plist */,
-				3FFCA5591F5270307E2D058A1173588C /* Pods-JapanDiceTests-umbrella.h */,
-				048E271FE6194F731641663C8975D7D6 /* Pods-JapanDiceTests.debug.xcconfig */,
-				2FF6CCEB69995A0329C8827F23A32688 /* Pods-JapanDiceTests.release.xcconfig */,
-			);
-			name = "Pods-JapanDiceTests";
-			path = "Target Support Files/Pods-JapanDiceTests";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -384,9 +169,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				74F2C8D899A9D9EC33507754AE827773 /* Pods */,
-				F4F3BAE8EBA17C8285845070DCFCE97F /* Products */,
-				F8BBE3A4EECA54D5B1D8BBC2D22681A6 /* Targets Support Files */,
+				B7359D10B9C3D4F59E36BC5740FCA5B9 /* Products */,
+				18B037363B50ADB8513051AA522ECA93 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -398,89 +182,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D5140BB328779A499188B1ED48843ECA /* Pods-JapanDice-JapanDiceUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DBE1AF7F22622658296D293D18E5D8D2 /* Pods-JapanDice-JapanDiceUITests.modulemap */,
-				30DE0F06999C96A781DBCDF1FD4F17EC /* Pods-JapanDice-JapanDiceUITests-acknowledgements.markdown */,
-				48A62930BA105B8543F69BB92CE41F6E /* Pods-JapanDice-JapanDiceUITests-acknowledgements.plist */,
-				FF1D54F1844C76FEBC856F6446710F95 /* Pods-JapanDice-JapanDiceUITests-dummy.m */,
-				8BC9B818E72D70B990E3BB825700107C /* Pods-JapanDice-JapanDiceUITests-frameworks.sh */,
-				59FC05AB9F021A269DDA91F4C8BC785C /* Pods-JapanDice-JapanDiceUITests-Info.plist */,
-				7A5534A7863ACE90AE95D67269E520F5 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */,
-				2ADD5DA32C3A1E0083E0107A14743F55 /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */,
-				E5EEAAF533593968C9B52D53D638D61C /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */,
-			);
-			name = "Pods-JapanDice-JapanDiceUITests";
-			path = "Target Support Files/Pods-JapanDice-JapanDiceUITests";
-			sourceTree = "<group>";
-		};
-		F4F3BAE8EBA17C8285845070DCFCE97F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */,
-				9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */,
-				C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods-JapanDice */,
-				6EACFE9F9F4A554CD361D071BF5278D9 /* Pods-JapanDice-JapanDiceUITests */,
-				7226A3C18E024DF70C95136139B46658 /* Pods-JapanDiceTests */,
-				319D06AA0D1D0BA345459C039040A1ED /* SideMenu */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F8BBE3A4EECA54D5B1D8BBC2D22681A6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				22A24248AE7B5AB12EC3B2481781CCA4 /* Pods-JapanDice */,
-				D5140BB328779A499188B1ED48843ECA /* Pods-JapanDice-JapanDiceUITests */,
-				8A9F68FF7AF146B26AE85F858B1BFE48 /* Pods-JapanDiceTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1A5718D3560AA3BF9B2C7E2256874A65 /* Headers */ = {
+		0246D8AF199BA77E08AEB5CF6211CAD0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D73079D3EA77F3C4E5563E8A6D4B90BC /* EARestrictedScrollView.h in Headers */,
-				0BD2277DED5E33B589F84CA546007F54 /* EARestrictedScrollView-umbrella.h in Headers */,
+				F3CE6A04550BFEECE44189500D2EA1FE /* Pods-JapanDice-JapanDiceUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FC96A07A5E9A1010B67FC72C97F3E84 /* Headers */ = {
+		8024F7AC5F888988440D53CB7A5AB7A4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F257E4136D9EBC311AB79DCA6DC56CF5 /* Pods-JapanDice-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6EFCBF3FF66A9211661351D4435B8892 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F30054B680E58A575CFA93D249EDD66 /* Pods-JapanDice-JapanDiceUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		808B3C78170DE39A17382B38756CAA06 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E56EEF71CC5AF0DA40228F2CA67B4BA0 /* SideMenu-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5D8B55E79A9A63974449ABFD2EC43ED /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B716456352FB225742266F3937CF4A40 /* EAIntroPage.h in Headers */,
-				FD760D1243B1AE6412C00A55541405A9 /* EAIntroView.h in Headers */,
-				C7A2EFC4F2088C3D6AACC9E687E8DF2E /* EAIntroView-umbrella.h in Headers */,
+				1DDC3266D55AAB0C341D60CC8F959A40 /* Pods-JapanDice-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,39 +212,18 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		83EF4E94EC7CCDDCF4BC86C414A2963A /* EARestrictedScrollView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 13B1CB94719A739CEFE7FE700FFC86F6 /* Build configuration list for PBXNativeTarget "EARestrictedScrollView" */;
-			buildPhases = (
-				1A5718D3560AA3BF9B2C7E2256874A65 /* Headers */,
-				046945E23ADAE6A0E85F1F1AFE4EED03 /* Sources */,
-				4516041A87B7DCCBA296263148710A61 /* Frameworks */,
-				6B8EB287B9465FC1760C035BBF0E901A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = EARestrictedScrollView;
-			productName = EARestrictedScrollView;
-			productReference = 9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */;
-			productType = "com.apple.product-type.framework";
-		};
 		92D4FBE774CB24BDE93321DA352C3D0A /* Pods-JapanDice-JapanDiceUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E7F944BA217607A93E8F8E6C820CE9 /* Build configuration list for PBXNativeTarget "Pods-JapanDice-JapanDiceUITests" */;
+			buildConfigurationList = 2F625E47BEA520D030D5F199B492638D /* Build configuration list for PBXNativeTarget "Pods-JapanDice-JapanDiceUITests" */;
 			buildPhases = (
-				6EFCBF3FF66A9211661351D4435B8892 /* Headers */,
-				B1121800F526B8DE41AD758CFD4D4F7D /* Sources */,
-				93C001AEC8E35A2C8117710B739F6E0B /* Frameworks */,
-				A0E5AF8AC983923C1CD49F603878D47D /* Resources */,
+				0246D8AF199BA77E08AEB5CF6211CAD0 /* Headers */,
+				A6B1024E0BDF014F60BC61849346229E /* Sources */,
+				939EB5AA2B288D88BE4B2DF79D2ACAFD /* Frameworks */,
+				EF62BDACA51320472A20B590B5A9A251 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2CA3B37D6B540CD1C45778D5D7562752 /* PBXTargetDependency */,
-				8F31BEDD7171A58B10DFB4EBC9ABB146 /* PBXTargetDependency */,
-				42629A4D8A27FDDD9A7425F70E5F6B04 /* PBXTargetDependency */,
 			);
 			name = "Pods-JapanDice-JapanDiceUITests";
 			productName = Pods_JapanDice_JapanDiceUITests;
@@ -546,7 +242,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				AC59046E3060B8CFAB27E02FED7FC1EC /* PBXTargetDependency */,
+				9AA3EB730BF2800B59F38CDE0ED0F855 /* PBXTargetDependency */,
 			);
 			name = "Pods-JapanDiceTests";
 			productName = Pods_JapanDiceTests;
@@ -555,60 +251,20 @@
 		};
 		B838D4A31139095456092E2507CA5FE8 /* Pods-JapanDice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0634639CEC4D9995D2BD4C990FC48B5D /* Build configuration list for PBXNativeTarget "Pods-JapanDice" */;
+			buildConfigurationList = 64854765A2541CD30D47E7C7E699C8AF /* Build configuration list for PBXNativeTarget "Pods-JapanDice" */;
 			buildPhases = (
-				2FC96A07A5E9A1010B67FC72C97F3E84 /* Headers */,
-				15C510327CE4D820AB2AE1FE5673425D /* Sources */,
-				5E7960F329A08E1D54A349A4902D40D5 /* Frameworks */,
-				885F2AE985DFD8DB9477B33D08F28DA1 /* Resources */,
+				8024F7AC5F888988440D53CB7A5AB7A4 /* Headers */,
+				6C6CD59014BDA863850787F5FFA1BE4B /* Sources */,
+				137876F2F956B0598918354CC054E34B /* Frameworks */,
+				5ED0817FDFF4E6F23F23F34B94FA12B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ECD6238024B3F39D16182443746267CD /* PBXTargetDependency */,
-				659FED0B5C95DADEB66E1E2CA72C7679 /* PBXTargetDependency */,
-				020E4FA0891B113FA6E1E7EBD8D1EC53 /* PBXTargetDependency */,
 			);
 			name = "Pods-JapanDice";
 			productName = Pods_JapanDice;
 			productReference = C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods-JapanDice */;
-			productType = "com.apple.product-type.framework";
-		};
-		C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C4E63BB43B7167D15C142EB405422643 /* Build configuration list for PBXNativeTarget "SideMenu" */;
-			buildPhases = (
-				808B3C78170DE39A17382B38756CAA06 /* Headers */,
-				67D65F22C5D7053A68ADB3533240B850 /* Sources */,
-				5DC25AA7986F2BF0AC82E6132A31A66D /* Frameworks */,
-				C35CA0EF3E2BEED48FF33721BDC0D000 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SideMenu;
-			productName = SideMenu;
-			productReference = 319D06AA0D1D0BA345459C039040A1ED /* SideMenu */;
-			productType = "com.apple.product-type.framework";
-		};
-		CC5D5F25300964D7791790EA262460A0 /* EAIntroView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE07218A2258DC3A25A79B20FB39C2F5 /* Build configuration list for PBXNativeTarget "EAIntroView" */;
-			buildPhases = (
-				B5D8B55E79A9A63974449ABFD2EC43ED /* Headers */,
-				E491B068981C2F342C84DC27F6928DB9 /* Sources */,
-				54BD9DF4F1707C62E08ABC76BFB60E37 /* Frameworks */,
-				4C65E605E3125CFE358844E133E2964D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E9FAD31ED6523C804548BF600D77C5A9 /* PBXTargetDependency */,
-			);
-			name = EAIntroView;
-			productName = EAIntroView;
-			productReference = F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -629,50 +285,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F4F3BAE8EBA17C8285845070DCFCE97F /* Products */;
+			productRefGroup = B7359D10B9C3D4F59E36BC5740FCA5B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC5D5F25300964D7791790EA262460A0 /* EAIntroView */,
-				83EF4E94EC7CCDDCF4BC86C414A2963A /* EARestrictedScrollView */,
 				B838D4A31139095456092E2507CA5FE8 /* Pods-JapanDice */,
 				92D4FBE774CB24BDE93321DA352C3D0A /* Pods-JapanDice-JapanDiceUITests */,
 				A7CF3A596785EE44A396312420ED05DD /* Pods-JapanDiceTests */,
-				C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C65E605E3125CFE358844E133E2964D /* Resources */ = {
+		5ED0817FDFF4E6F23F23F34B94FA12B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B8EB287B9465FC1760C035BBF0E901A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		885F2AE985DFD8DB9477B33D08F28DA1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0E5AF8AC983923C1CD49F603878D47D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C35CA0EF3E2BEED48FF33721BDC0D000 /* Resources */ = {
+		EF62BDACA51320472A20B590B5A9A251 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -689,23 +321,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		046945E23ADAE6A0E85F1F1AFE4EED03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BC1DE6D74B99B4B6EABBDBAD317E7A9F /* EARestrictedScrollView.m in Sources */,
-				F5B8960DAF6FABF4DEF640E5A0B3EA58 /* EARestrictedScrollView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15C510327CE4D820AB2AE1FE5673425D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23065E7421D23F849A48162427EF1054 /* Pods-JapanDice-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41CE4FB08B2B1A0C3D03796DFF5EE12A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -714,103 +329,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67D65F22C5D7053A68ADB3533240B850 /* Sources */ = {
+		6C6CD59014BDA863850787F5FFA1BE4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3BE0026C39E4B360BBDA0D5C57DD25D /* Deprecations.swift in Sources */,
-				F28D439429A375B6D4FCD037ED317CD6 /* Extensions.swift in Sources */,
-				74106BDED4B8B2281DFE4BE5E109D847 /* Initializable.swift in Sources */,
-				BE79F903F87E7D5918C6414E6203743E /* Print.swift in Sources */,
-				DAD5950A205347FCDBD3751604472431 /* Protected.swift in Sources */,
-				1F0DDBBAF86A028D6D60A7E10B4D3634 /* SideMenu-dummy.m in Sources */,
-				B804587E525773FCA9698855B2C752DC /* SideMenuAnimationController.swift in Sources */,
-				E97C7A323474D0205E872AE7BC773650 /* SideMenuInteractionController.swift in Sources */,
-				E709C98B763E8065628D8E88715E0BF8 /* SideMenuManager.swift in Sources */,
-				9E9F19E0120EA3C46967C28E637F52C8 /* SideMenuNavigationController.swift in Sources */,
-				057B453F4AE14D10EA77D38FA1A0B8FB /* SideMenuPresentationController.swift in Sources */,
-				5587C359D9C8789950E7F6585C2292E7 /* SideMenuPresentationStyle.swift in Sources */,
-				E72252B09CC270B50217CA6AEABD620A /* SideMenuPushCoordinator.swift in Sources */,
-				3817F4830A10E51D20B72530EF6A56D2 /* SideMenuTransitionController.swift in Sources */,
-				BC9C2E663681EDDBFE985034DCC7AAAF /* UITableViewVibrantCell.swift in Sources */,
+				8BA26142675661F4DFAA02602C67880B /* Pods-JapanDice-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1121800F526B8DE41AD758CFD4D4F7D /* Sources */ = {
+		A6B1024E0BDF014F60BC61849346229E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D118701C745C857840D0F936130908E1 /* Pods-JapanDice-JapanDiceUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E491B068981C2F342C84DC27F6928DB9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A466E075312C8FA95516F4F00D225B68 /* EAIntroPage.m in Sources */,
-				380B7F7550BF2F4454C14B459ACFB229 /* EAIntroView.m in Sources */,
-				1C7EF6EE6A417B01AB8E17D3D6F7CD75 /* EAIntroView-dummy.m in Sources */,
+				D5A06746AE0163BB0B2AA9EA44098916 /* Pods-JapanDice-JapanDiceUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		020E4FA0891B113FA6E1E7EBD8D1EC53 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SideMenu;
-			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
-			targetProxy = AEC776593CEAA1F3AFB54066393956B0 /* PBXContainerItemProxy */;
-		};
-		2CA3B37D6B540CD1C45778D5D7562752 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EAIntroView;
-			target = CC5D5F25300964D7791790EA262460A0 /* EAIntroView */;
-			targetProxy = 64191D0F9B5C134A6F11D7DEEC211F67 /* PBXContainerItemProxy */;
-		};
-		42629A4D8A27FDDD9A7425F70E5F6B04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SideMenu;
-			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
-			targetProxy = 25D678478F687A9DF7350219209E3F2A /* PBXContainerItemProxy */;
-		};
-		659FED0B5C95DADEB66E1E2CA72C7679 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EARestrictedScrollView;
-			target = 83EF4E94EC7CCDDCF4BC86C414A2963A /* EARestrictedScrollView */;
-			targetProxy = C71EFF399A5595DB9B0EFAF23C9EA077 /* PBXContainerItemProxy */;
-		};
-		8F31BEDD7171A58B10DFB4EBC9ABB146 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EARestrictedScrollView;
-			target = 83EF4E94EC7CCDDCF4BC86C414A2963A /* EARestrictedScrollView */;
-			targetProxy = 3653A68CBAD7D4BE3B3A57216ECF83D6 /* PBXContainerItemProxy */;
-		};
-		AC59046E3060B8CFAB27E02FED7FC1EC /* PBXTargetDependency */ = {
+		9AA3EB730BF2800B59F38CDE0ED0F855 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JapanDice";
 			target = B838D4A31139095456092E2507CA5FE8 /* Pods-JapanDice */;
-			targetProxy = 5AD03DF7344B48E1252BA7FCE795FCC7 /* PBXContainerItemProxy */;
-		};
-		E9FAD31ED6523C804548BF600D77C5A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EARestrictedScrollView;
-			target = 83EF4E94EC7CCDDCF4BC86C414A2963A /* EARestrictedScrollView */;
-			targetProxy = 914BFA8F4E746FA00718619D5DC77C0E /* PBXContainerItemProxy */;
-		};
-		ECD6238024B3F39D16182443746267CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EAIntroView;
-			target = CC5D5F25300964D7791790EA262460A0 /* EAIntroView */;
-			targetProxy = B3A8C935F624283779C82550D44D1D14 /* PBXContainerItemProxy */;
+			targetProxy = 07273E67B1DE3AD2F31469E446D30B65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C4CBA5C3412AA081A2D564EA50959A8 /* Release */ = {
+		046C796D977283E041E4BDE00129F346 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5EEAAF533593968C9B52D53D638D61C /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */;
+			baseConfigurationReference = F570E1680A80C268D865148DE3AB4515 /* Pods-JapanDice.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1FE99304F979890998B69ACEE0B02039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A91867B91BC7BE19D797C7418B38E0E /* Pods-JapanDice.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		477F7F28411CDFC6F96D39933902C36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F40BED8F32FD0E9452CE4235B727816 /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -840,51 +464,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		46BFE2312ECDC35BEC02D94DC5B60F4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAE2206BF7EEEA67F9DC718D1A5162AD /* SideMenu.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/SideMenu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 		4F09FB38447C71FD1AADF08ABB72F0BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 048E271FE6194F731641663C8975D7D6 /* Pods-JapanDiceTests.debug.xcconfig */;
+			baseConfigurationReference = 57AAB148733CC3B5E8310C578AE2ADEB /* Pods-JapanDiceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -906,113 +493,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-JapanDiceTests/Pods-JapanDiceTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		66588E96653AA28B95945C0AB4FA0C3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED7043C69F6B953E42731B847B431262 /* EARestrictedScrollView.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView.modulemap";
-				PRODUCT_MODULE_NAME = EARestrictedScrollView;
-				PRODUCT_NAME = EARestrictedScrollView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7E99DDA4F7F59EDB2C5359619D21D1B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46B7EB820A15A5A0D119E2A004F87E38 /* EAIntroView.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EAIntroView/EAIntroView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EAIntroView/EAIntroView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EAIntroView/EAIntroView.modulemap";
-				PRODUCT_MODULE_NAME = EAIntroView;
-				PRODUCT_NAME = EAIntroView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		899BA91916DFBFEEC6EA7CE4B56DA2C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ADD5DA32C3A1E0083E0107A14743F55 /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1092,44 +572,6 @@
 			};
 			name = Debug;
 		};
-		9169D3DBD7F0CC646A947E2DBB194B3A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FEF647D33ACF1375F6AED8AE1022627 /* Pods-JapanDice.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1192,112 +634,9 @@
 			};
 			name = Release;
 		};
-		9E0C37648D76E361234D07CA876D0358 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F05934B4CF19F09F8C7C0BA818166097 /* SideMenu.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/SideMenu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A93C143A73A8D31AFBEDDBD207570142 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59D55A15C8F57454AE9A33AF49368F51 /* EAIntroView.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EAIntroView/EAIntroView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EAIntroView/EAIntroView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EAIntroView/EAIntroView.modulemap";
-				PRODUCT_MODULE_NAME = EAIntroView;
-				PRODUCT_NAME = EAIntroView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B68A77CEDBC8CFD81605BF85F6C843CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74D344DF2F7ECBCCB620C31347154D7F /* EARestrictedScrollView.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView.modulemap";
-				PRODUCT_MODULE_NAME = EARestrictedScrollView;
-				PRODUCT_NAME = EARestrictedScrollView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D30C4D6436EC6A161DB8C505D9384DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FF6CCEB69995A0329C8827F23A32688 /* Pods-JapanDiceTests.release.xcconfig */;
+			baseConfigurationReference = 06475877A5E6BBF7A5DCC7D1EA998B08 /* Pods-JapanDiceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1333,9 +672,9 @@
 			};
 			name = Release;
 		};
-		FCFC2847F2710DAC4690E285AC0E36B6 /* Debug */ = {
+		DA00C33F8D3C2C7383605539BE633925 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84F423E96683C1FDC0949F4FD5C0E682 /* Pods-JapanDice.debug.xcconfig */;
+			baseConfigurationReference = F8BC93279A0772AC5E4FBEAC23F66285 /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1347,7 +686,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1356,7 +695,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1365,28 +704,20 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0634639CEC4D9995D2BD4C990FC48B5D /* Build configuration list for PBXNativeTarget "Pods-JapanDice" */ = {
+		2F625E47BEA520D030D5F199B492638D /* Build configuration list for PBXNativeTarget "Pods-JapanDice-JapanDiceUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCFC2847F2710DAC4690E285AC0E36B6 /* Debug */,
-				9169D3DBD7F0CC646A947E2DBB194B3A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		13B1CB94719A739CEFE7FE700FFC86F6 /* Build configuration list for PBXNativeTarget "EARestrictedScrollView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B68A77CEDBC8CFD81605BF85F6C843CB /* Debug */,
-				66588E96653AA28B95945C0AB4FA0C3F /* Release */,
+				477F7F28411CDFC6F96D39933902C36A /* Debug */,
+				DA00C33F8D3C2C7383605539BE633925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1409,29 +740,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E7F944BA217607A93E8F8E6C820CE9 /* Build configuration list for PBXNativeTarget "Pods-JapanDice-JapanDiceUITests" */ = {
+		64854765A2541CD30D47E7C7E699C8AF /* Build configuration list for PBXNativeTarget "Pods-JapanDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				899BA91916DFBFEEC6EA7CE4B56DA2C8 /* Debug */,
-				0C4CBA5C3412AA081A2D564EA50959A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C4E63BB43B7167D15C142EB405422643 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9E0C37648D76E361234D07CA876D0358 /* Debug */,
-				46BFE2312ECDC35BEC02D94DC5B60F4C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE07218A2258DC3A25A79B20FB39C2F5 /* Build configuration list for PBXNativeTarget "EAIntroView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A93C143A73A8D31AFBEDDBD207570142 /* Debug */,
-				7E99DDA4F7F59EDB2C5359619D21D1B2 /* Release */,
+				046C796D977283E041E4BDE00129F346 /* Debug */,
+				1FE99304F979890998B69ACEE0B02039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

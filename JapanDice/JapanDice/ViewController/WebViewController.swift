@@ -11,8 +11,6 @@ import Accounts
 
 class WebViewController: UIViewController {
     
-    @IBOutlet weak var bottomView: UIView!
-    
     //MainViewControllerから値を受け取る
     var reciever: String = ""
     

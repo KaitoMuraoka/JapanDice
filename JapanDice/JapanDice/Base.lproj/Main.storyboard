@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="M50-0s-pET">
+            <objects>
+                <viewController id="14m-Xf-8WQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VmS-4w-Nqq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zLD-J8-LBj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8RD-yN-V6c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxN-8g-RSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="-597"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -97,12 +113,15 @@
                             <constraint firstItem="gt7-SM-g8R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="132" id="zlX-bX-m6t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ptw-pm-QKW"/>
+                    <navigationItem key="navigationItem" id="Ptw-pm-QKW">
+                        <barButtonItem key="rightBarButtonItem" image="note.text" catalog="system" id="g0T-BW-wjp"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="button" destination="pEx-5e-vS2" id="ZCg-re-ZeT"/>
                         <outlet property="nameLabel" destination="g4l-aq-gH0" id="tMm-4A-7tk"/>
                         <outlet property="prefecturesImage" destination="gt7-SM-g8R" id="Z5Y-VC-MQM"/>
                         <segue destination="V8H-0j-c1T" kind="show" identifier="goWeb" id="kJw-r2-Lcq"/>
+                        <segue destination="14m-Xf-8WQ" kind="show" id="9rq-dP-DRu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -232,6 +251,7 @@
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="goforward" catalog="system" width="121" height="128"/>
+        <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="日本" width="960" height="960"/>

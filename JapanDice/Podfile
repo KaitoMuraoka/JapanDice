@@ -6,8 +6,6 @@ target 'JapanDice' do
   use_frameworks!
 
   # Pods for JapanDice
-  pod 'EAIntroView'
-  pod 'SideMenu'
 
   target 'JapanDiceTests' do
     inherit! :search_paths
