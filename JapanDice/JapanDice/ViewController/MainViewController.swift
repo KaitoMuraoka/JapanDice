@@ -87,9 +87,12 @@ class MainViewController: UIViewController {
         return images
     }
     
-    @IBAction func infoButton(_ sender: Any) {
-        performSegue(withIdentifier: "goInfo", sender: nil)
+    @IBAction func congestionButton(_ sender: Any) {
+        performSegue(withIdentifier: "goCongestion", sender: nil)
     }
+    
+    
+    
     
     
     
