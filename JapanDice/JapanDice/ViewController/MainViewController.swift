@@ -91,6 +91,9 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "goCongestion", sender: nil)
     }
     
+    @IBAction func infoButton(_ sender: Any) {
+        performSegue(withIdentifier: "goInfo", sender: nil)
+    }
     
     
     

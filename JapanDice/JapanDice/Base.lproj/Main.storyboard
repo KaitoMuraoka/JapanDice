@@ -75,20 +75,6 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZwM-eg-YXB">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygM-sP-PYx">
-                                            <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8yc-m7-dCK">
-                                                <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <gestureRecognizers/>
-                                            </view>
-                                            <vibrancyEffect>
-                                                <blurEffect style="regular"/>
-                                            </vibrancyEffect>
-                                        </visualEffectView>
-                                    </subviews>
                                     <gestureRecognizers/>
                                 </view>
                                 <blurEffect style="light"/>
@@ -149,6 +135,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ptw-pm-QKW">
+                        <barButtonItem key="leftBarButtonItem" image="info.circle" catalog="system" id="eSs-Ne-dnI">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="infoButton:" destination="BYZ-38-t0r" id="MeQ-A1-XNt"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="note.text" catalog="system" id="g0T-BW-wjp">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -162,6 +154,7 @@
                         <outlet property="prefecturesImage" destination="gt7-SM-g8R" id="Z5Y-VC-MQM"/>
                         <segue destination="V8H-0j-c1T" kind="show" identifier="goWeb" id="kJw-r2-Lcq"/>
                         <segue destination="14m-Xf-8WQ" kind="show" identifier="goCongestion" id="9rq-dP-DRu"/>
+                        <segue destination="Y9F-tL-Drb" kind="show" identifier="goInfo" id="2hw-0u-FAx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -171,7 +164,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="855" y="98"/>
+            <point key="canvasLocation" x="853.62318840579712" y="97.767857142857139"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="lRV-q0-Jn5">
@@ -267,6 +260,95 @@
             </objects>
             <point key="canvasLocation" x="1705.7971014492755" y="97.767857142857139"/>
         </scene>
+        <!--Info View Controller-->
+        <scene sceneID="ocA-rc-ocj">
+            <objects>
+                <viewController id="Y9F-tL-Drb" customClass="InfoViewController" customModule="JapanDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eSy-us-gnD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="y3A-VL-CGn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQy-rV-qUV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kuJ-8K-1us">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <gestureRecognizers/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oP4-Zw-aYM">
+                                <rect key="frame" x="117" y="409.5" width="180" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="aYq-FP-rrn"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="License">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LicenseButton:" destination="Y9F-tL-Drb" eventType="touchUpInside" id="Yh6-oj-t1F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enz-d4-wEY">
+                                <rect key="frame" x="117" y="571.5" width="180" height="77"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PrivacyPolicey">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="PrivacyPolicyButton:" destination="Y9F-tL-Drb" eventType="touchUpInside" id="mCD-8O-zab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-X0-t4U">
+                                <rect key="frame" x="117" y="247.5" width="180" height="77"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Support">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SuportButton:" destination="Y9F-tL-Drb" eventType="touchUpInside" id="3eH-sM-iiV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TQj-Dw-Ev6"/>
+                        <constraints>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="leading" secondItem="wmn-X0-t4U" secondAttribute="leading" id="85K-1U-zPw"/>
+                            <constraint firstItem="y3A-VL-CGn" firstAttribute="bottom" secondItem="ZQy-rV-qUV" secondAttribute="bottom" id="9RJ-Ua-E4r"/>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="centerY" secondItem="eSy-us-gnD" secondAttribute="centerY" id="Clk-4a-T6p"/>
+                            <constraint firstItem="enz-d4-wEY" firstAttribute="top" secondItem="oP4-Zw-aYM" secondAttribute="bottom" constant="85" id="DGA-j5-oXY"/>
+                            <constraint firstItem="enz-d4-wEY" firstAttribute="height" secondItem="wmn-X0-t4U" secondAttribute="height" id="Hoi-5P-jpz"/>
+                            <constraint firstItem="ZQy-rV-qUV" firstAttribute="trailing" secondItem="y3A-VL-CGn" secondAttribute="trailing" id="Hym-KB-uhF"/>
+                            <constraint firstItem="y3A-VL-CGn" firstAttribute="centerY" secondItem="oP4-Zw-aYM" secondAttribute="centerY" id="JBh-zb-y9K"/>
+                            <constraint firstItem="y3A-VL-CGn" firstAttribute="leading" secondItem="ZQy-rV-qUV" secondAttribute="leading" id="MXm-Uz-HFA"/>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="width" secondItem="wmn-X0-t4U" secondAttribute="width" id="NSq-Y1-g8D"/>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="centerX" secondItem="eSy-us-gnD" secondAttribute="centerX" id="XEt-I4-tab"/>
+                            <constraint firstItem="y3A-VL-CGn" firstAttribute="top" secondItem="ZQy-rV-qUV" secondAttribute="top" id="YK4-pe-CJ5"/>
+                            <constraint firstItem="ZQy-rV-qUV" firstAttribute="leading" secondItem="eSy-us-gnD" secondAttribute="leading" id="ave-l7-3o7"/>
+                            <constraint firstItem="enz-d4-wEY" firstAttribute="centerX" secondItem="eSy-us-gnD" secondAttribute="centerX" id="b8X-cU-7Eu"/>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="centerX" secondItem="eSy-us-gnD" secondAttribute="centerX" id="bYd-MX-HQm"/>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="leading" secondItem="TQj-Dw-Ev6" secondAttribute="leading" constant="117" id="bhU-II-T3a"/>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="top" secondItem="wmn-X0-t4U" secondAttribute="bottom" constant="85" id="bo1-Pd-fhU"/>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="height" secondItem="wmn-X0-t4U" secondAttribute="height" id="eZv-lN-BOG"/>
+                            <constraint firstItem="enz-d4-wEY" firstAttribute="width" secondItem="wmn-X0-t4U" secondAttribute="width" id="h9s-PU-1qe"/>
+                            <constraint firstItem="y3A-VL-CGn" firstAttribute="top" secondItem="eSy-us-gnD" secondAttribute="top" id="mLv-aj-3PU"/>
+                            <constraint firstItem="wmn-X0-t4U" firstAttribute="centerX" secondItem="eSy-us-gnD" secondAttribute="centerX" id="tA6-t1-gTk"/>
+                            <constraint firstItem="y3A-VL-CGn" firstAttribute="centerX" secondItem="wmn-X0-t4U" secondAttribute="centerX" id="uDD-XC-ITf"/>
+                            <constraint firstItem="oP4-Zw-aYM" firstAttribute="leading" secondItem="enz-d4-wEY" secondAttribute="leading" id="zf3-V3-Hst"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rwp-an-pMx"/>
+                    <connections>
+                        <outlet property="PrivacyPoliceyLabel" destination="enz-d4-wEY" id="UD2-ic-Ixx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sAF-kH-e9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="866.51785714285711"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="1eQ-nn-rbb">
             <objects>
@@ -291,6 +373,7 @@
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="goforward" catalog="system" width="121" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
