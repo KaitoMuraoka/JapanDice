@@ -17,6 +17,7 @@ class CongestionViewController: UIViewController, UICollectionViewDelegate, UICo
         super.viewDidLoad()
         
         setupCollectionView()
+        collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CongestionCell")
 
         dailyLabel.text = "更新日：\(CongestionSingleton.shared.sightseeing[0].date)"
         
@@ -39,9 +40,23 @@ class CongestionViewController: UIViewController, UICollectionViewDelegate, UICo
     
     //Cell(要素)に表示する内容
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CongestionCell", for: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CongestionCell", for: indexPath) as! CollectionViewCell
+        
+        cell.dataName.text = CongestionSingleton.shared.sightseeing[indexPath.row].dataName
+        cell.comparisonPreDay.text = increaseAndDecrease(CongestionSingleton.shared.sightseeing[indexPath.row].comparisonPreDay)
+        cell.comparisonPreYear.text = increaseAndDecrease(CongestionSingleton.shared.sightseeing[indexPath.row].comparisonPreYear)
+        
+        
         
         return cell
+    }
+    
+    private func increaseAndDecrease(_ data: String) -> String{
+        if data.contains("-") {
+            return "\(data)%"
+        }else{
+            return "+\(data)%"
+        }
     }
     
 }

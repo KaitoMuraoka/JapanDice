@@ -9,6 +9,7 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+
     @IBOutlet weak var dataName: UILabel!
     @IBOutlet weak var comparisonPreDay: UILabel!
     @IBOutlet weak var comparisonPreYear: UILabel!
@@ -16,7 +17,7 @@ class CollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
+        dataName.adjustsFontSizeToFitWidth = true
     }
 
 }
