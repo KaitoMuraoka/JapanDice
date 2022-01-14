@@ -21,6 +21,7 @@
 		9F39B4BA271949F700E54E17 /* JapanDiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */; };
 		9F39B4BC271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */; };
 		9F774819279141500088E7F9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F774818279141500088E7F9 /* InfoViewController.swift */; };
+		9F77481B2791A8CC0088E7F9 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F77481A2791A8CC0088E7F9 /* LicenseViewController.swift */; };
 		9FA17E21278D74D700F9928F /* CongestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E20278D74D700F9928F /* CongestionViewController.swift */; };
 		9FA17E23278D7B9300F9928F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E22278D7B9300F9928F /* API.swift */; };
 		9FA17E25278D7D9F00F9928F /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E24278D7D9F00F9928F /* Entity.swift */; };
@@ -81,6 +82,7 @@
 		9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITests.swift; sourceTree = "<group>"; };
 		9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F774818279141500088E7F9 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		9F77481A2791A8CC0088E7F9 /* LicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 		9FA17E20278D74D700F9928F /* CongestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongestionViewController.swift; sourceTree = "<group>"; };
 		9FA17E22278D7B9300F9928F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9FA17E24278D7D9F00F9928F /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				9F239C1A27853B2000C0711F /* WebViewController.swift */,
 				9FA17E20278D74D700F9928F /* CongestionViewController.swift */,
 				9F774818279141500088E7F9 /* InfoViewController.swift */,
+				9F77481A2791A8CC0088E7F9 /* LicenseViewController.swift */,
 				9FDD2CB1278F18D000F9615E /* Cell */,
 			);
 			path = ViewController;
@@ -432,6 +435,7 @@
 				9FA17E27278DD69D00F9928F /* CongestionSingleton.swift in Sources */,
 				9F39B49D271949F200E54E17 /* MainViewController.swift in Sources */,
 				9FDD2CB4278F190D00F9615E /* CollectionViewCell.swift in Sources */,
+				9F77481B2791A8CC0088E7F9 /* LicenseViewController.swift in Sources */,
 				9F39B499271949F200E54E17 /* AppDelegate.swift in Sources */,
 				9F774819279141500088E7F9 /* InfoViewController.swift in Sources */,
 				9FA17E25278D7D9F00F9928F /* Entity.swift in Sources */,

@@ -26,10 +26,6 @@ class InfoViewController: UIViewController {
         print("This is SuportButton")
     }
     
-    @IBAction func LicenseButton(_ sender: Any) {
-        print("This is LicenseButton")
-    }
-    
     @IBAction func PrivacyPolicyButton(_ sender: Any) {
         print("This is PrivacyPolicyButton")
     }
