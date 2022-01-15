@@ -9,6 +9,8 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    
+    @IBOutlet weak var SupportButtonLabel: UIButton!
     @IBOutlet weak var PrivacyPoliceyLabel: UIButton!
     
     override func viewDidLoad() {
@@ -16,8 +18,8 @@ class InfoViewController: UIViewController {
         
         self.navigationController?.navigationBar.tintColor = UIColor.white
         
-        PrivacyPoliceyLabel.titleLabel?.numberOfLines = 1
-        PrivacyPoliceyLabel.titleLabel?.adjustsFontSizeToFitWidth = true
+        SupportButtonLayout()
+        PrivacyPoliceyButtonLayout()
 
     }
     
@@ -30,4 +32,15 @@ class InfoViewController: UIViewController {
         print("This is PrivacyPolicyButton")
     }
     
+    private func SupportButtonLayout(){
+//        SupportButtonLabel.center = self.view.center
+        SupportButtonLabel.frame = CGRect(x: (self.view.bounds.width-160)/2, y: view.frame.height / 2.5, width: 156, height: 84)
+    }
+    
+    private func PrivacyPoliceyButtonLayout(){
+        PrivacyPoliceyLabel.titleLabel?.numberOfLines = 1
+        PrivacyPoliceyLabel.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        PrivacyPoliceyLabel.frame = CGRect(x: (self.view.bounds.width-160)/2, y: view.frame.size.height / 1.5, width: 156, height: 84)
+    }
 }

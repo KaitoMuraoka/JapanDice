@@ -6,25 +6,51 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B08332B0C91F6CDC405644DADDB96E3C /* LicensePlist */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DA780A304D1C08C3C9CC83320DBE03DB /* Build configuration list for PBXAggregateTarget "LicensePlist" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = LicensePlist;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		1DDC3266D55AAB0C341D60CC8F959A40 /* Pods-JapanDice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9AB8231A52A08C6B2A115EFA2D1BE3 /* Pods-JapanDice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68F8979ECF070FD92BD301BF7C550D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6995AA1C3682AEEB5273F6C335737AD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1A6BBD23FCA11F798223F63D952FB079 /* Pods-JapanDice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D3646769B38627241FD07602AB1D5 /* Pods-JapanDice-dummy.m */; };
+		3D6F4EB733C2026887983A037D2FCE43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		79BE5821664FF0D5061F9343C0B28174 /* Pods-JapanDice-JapanDiceUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF933E1C61378E6FCD83BD9009C7C71 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B999A799D3D0B9987B4FF862BE378AE /* Pods-JapanDiceTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03201B98A839A67C0B2D410E1E8FB070 /* Pods-JapanDiceTests-dummy.m */; };
-		8BA26142675661F4DFAA02602C67880B /* Pods-JapanDice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D3646769B38627241FD07602AB1D5 /* Pods-JapanDice-dummy.m */; };
-		D5A06746AE0163BB0B2AA9EA44098916 /* Pods-JapanDice-JapanDiceUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AFA62201C3B3854B9DFC5D8A089C94 /* Pods-JapanDice-JapanDiceUITests-dummy.m */; };
+		962A2F94967289A1E4298B8F814897DA /* Pods-JapanDice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9AB8231A52A08C6B2A115EFA2D1BE3 /* Pods-JapanDice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D20D4EED1550E6DC8E31429257B41F21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D9326C39D600D9D579D69C1AE6E1FB91 /* Pods-JapanDice-JapanDiceUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AFA62201C3B3854B9DFC5D8A089C94 /* Pods-JapanDice-JapanDiceUITests-dummy.m */; };
 		E1553467D7093C8B24C74C3F75A536DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E492118902FD6886AB533F2F48D13057 /* Pods-JapanDiceTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8ED6DE2C54E1C5B905E3829C083358 /* Pods-JapanDiceTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3CE6A04550BFEECE44189500D2EA1FE /* Pods-JapanDice-JapanDiceUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF933E1C61378E6FCD83BD9009C7C71 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07273E67B1DE3AD2F31469E446D30B65 /* PBXContainerItemProxy */ = {
+		1E1B57E3E498BA4F8BF1788A9B75C233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B08332B0C91F6CDC405644DADDB96E3C;
+			remoteInfo = LicensePlist;
+		};
+		672DA000B2C0DF57D984FCF99D4CE4ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B838D4A31139095456092E2507CA5FE8;
 			remoteInfo = "Pods-JapanDice";
+		};
+		F023609AA0DF2B762944DC86FB02E33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B08332B0C91F6CDC405644DADDB96E3C;
+			remoteInfo = LicensePlist;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,6 +69,7 @@
 		4A7D3646769B38627241FD07602AB1D5 /* Pods-JapanDice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDice-dummy.m"; sourceTree = "<group>"; };
 		4AC64744D32314916454D2926B415788 /* Pods-JapanDice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-acknowledgements.plist"; sourceTree = "<group>"; };
 		57AAB148733CC3B5E8310C578AE2ADEB /* Pods-JapanDiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58807FE24D388F6045DB4DF83DFABC43 /* LicensePlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LicensePlist.debug.xcconfig; sourceTree = "<group>"; };
 		5A91867B91BC7BE19D797C7418B38E0E /* Pods-JapanDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice.release.xcconfig"; sourceTree = "<group>"; };
 		65D62F02A839FE501A582A9D8CE4D524 /* Pods-JapanDice-JapanDiceUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapanDice-JapanDiceUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6EACFE9F9F4A554CD361D071BF5278D9 /* Pods-JapanDice-JapanDiceUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JapanDice-JapanDiceUITests"; path = Pods_JapanDice_JapanDiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,29 +78,30 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8C9AB8231A52A08C6B2A115EFA2D1BE3 /* Pods-JapanDice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapanDice-umbrella.h"; sourceTree = "<group>"; };
 		9330C746EE800EEFCB9C573DBFFE6DB2 /* Pods-JapanDiceTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapanDiceTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4AFA62201C3B3854B9DFC5D8A089C94 /* Pods-JapanDice-JapanDiceUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapanDice-JapanDiceUITests-dummy.m"; sourceTree = "<group>"; };
+		AB5C7E8D36B8B27E5B7525C852C201F2 /* LicensePlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LicensePlist.release.xcconfig; sourceTree = "<group>"; };
 		B94EE17699A1860E8AEBBDD65F343D83 /* Pods-JapanDice-JapanDiceUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JapanDice-JapanDiceUITests.modulemap"; sourceTree = "<group>"; };
-		C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods_JapanDice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapanDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods-JapanDice */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JapanDice"; path = Pods_JapanDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF933E1C61378E6FCD83BD9009C7C71 /* Pods-JapanDice-JapanDiceUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapanDice-JapanDiceUITests-umbrella.h"; sourceTree = "<group>"; };
 		F570E1680A80C268D865148DE3AB4515 /* Pods-JapanDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice.debug.xcconfig"; sourceTree = "<group>"; };
 		F8BC93279A0772AC5E4FBEAC23F66285 /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapanDice-JapanDiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		137876F2F956B0598918354CC054E34B /* Frameworks */ = {
+		D38E6E9965144A3B376ACBCED08C835A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F8979ECF070FD92BD301BF7C550D08 /* Foundation.framework in Frameworks */,
+				D20D4EED1550E6DC8E31429257B41F21 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		939EB5AA2B288D88BE4B2DF79D2ACAFD /* Frameworks */ = {
+		DEF341DFBAC5DF40FD3066464684F75A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6995AA1C3682AEEB5273F6C335737AD2 /* Foundation.framework in Frameworks */,
+				3D6F4EB733C2026887983A037D2FCE43 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09E20E5A9B6568703E29C14FDF189E65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AB844B3EAA1679DD3FE587F99D34EAD /* LicensePlist */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		18B037363B50ADB8513051AA522ECA93 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +174,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		5AB844B3EAA1679DD3FE587F99D34EAD /* LicensePlist */ = {
+			isa = PBXGroup;
+			children = (
+				8CC40D6AFD14FAEF54289102289361B1 /* Support Files */,
+			);
+			name = LicensePlist;
+			path = LicensePlist;
+			sourceTree = "<group>";
+		};
+		8CC40D6AFD14FAEF54289102289361B1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58807FE24D388F6045DB4DF83DFABC43 /* LicensePlist.debug.xcconfig */,
+				AB5C7E8D36B8B27E5B7525C852C201F2 /* LicensePlist.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LicensePlist";
+			sourceTree = "<group>";
+		};
 		A13BB8943DE6B83EA6D0D33EFC064F20 /* Pods-JapanDice-JapanDiceUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +212,7 @@
 		B7359D10B9C3D4F59E36BC5740FCA5B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods_JapanDice.framework */,
+				C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods-JapanDice */,
 				6EACFE9F9F4A554CD361D071BF5278D9 /* Pods-JapanDice-JapanDiceUITests */,
 				7226A3C18E024DF70C95136139B46658 /* Pods-JapanDiceTests */,
 			);
@@ -169,6 +224,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				09E20E5A9B6568703E29C14FDF189E65 /* Pods */,
 				B7359D10B9C3D4F59E36BC5740FCA5B9 /* Products */,
 				18B037363B50ADB8513051AA522ECA93 /* Targets Support Files */,
 			);
@@ -185,19 +241,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0246D8AF199BA77E08AEB5CF6211CAD0 /* Headers */ = {
+		A3FF2AA52BDA30EFF799043255B0B802 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CE6A04550BFEECE44189500D2EA1FE /* Pods-JapanDice-JapanDiceUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8024F7AC5F888988440D53CB7A5AB7A4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DDC3266D55AAB0C341D60CC8F959A40 /* Pods-JapanDice-umbrella.h in Headers */,
+				962A2F94967289A1E4298B8F814897DA /* Pods-JapanDice-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,21 +257,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2BDBF6778E1B296D98590B3DEEBB658 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BE5821664FF0D5061F9343C0B28174 /* Pods-JapanDice-JapanDiceUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		92D4FBE774CB24BDE93321DA352C3D0A /* Pods-JapanDice-JapanDiceUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F625E47BEA520D030D5F199B492638D /* Build configuration list for PBXNativeTarget "Pods-JapanDice-JapanDiceUITests" */;
+			buildConfigurationList = B774A22C22237B30003CE6BF6D1CF578 /* Build configuration list for PBXNativeTarget "Pods-JapanDice-JapanDiceUITests" */;
 			buildPhases = (
-				0246D8AF199BA77E08AEB5CF6211CAD0 /* Headers */,
-				A6B1024E0BDF014F60BC61849346229E /* Sources */,
-				939EB5AA2B288D88BE4B2DF79D2ACAFD /* Frameworks */,
-				EF62BDACA51320472A20B590B5A9A251 /* Resources */,
+				D2BDBF6778E1B296D98590B3DEEBB658 /* Headers */,
+				1F6F4714B6553615AB0BACDEC46BD902 /* Sources */,
+				DEF341DFBAC5DF40FD3066464684F75A /* Frameworks */,
+				74D3E4B7ED287E05D7F790BD7249969A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD10DA525EA3A010BAB08BA4E79D5D2F /* PBXTargetDependency */,
 			);
 			name = "Pods-JapanDice-JapanDiceUITests";
 			productName = Pods_JapanDice_JapanDiceUITests;
@@ -242,7 +299,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9AA3EB730BF2800B59F38CDE0ED0F855 /* PBXTargetDependency */,
+				6A262DC64D53C07D14FAD0D424EA879C /* PBXTargetDependency */,
 			);
 			name = "Pods-JapanDiceTests";
 			productName = Pods_JapanDiceTests;
@@ -251,20 +308,21 @@
 		};
 		B838D4A31139095456092E2507CA5FE8 /* Pods-JapanDice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64854765A2541CD30D47E7C7E699C8AF /* Build configuration list for PBXNativeTarget "Pods-JapanDice" */;
+			buildConfigurationList = 230A3AFFC497F553B856C46DBB888C45 /* Build configuration list for PBXNativeTarget "Pods-JapanDice" */;
 			buildPhases = (
-				8024F7AC5F888988440D53CB7A5AB7A4 /* Headers */,
-				6C6CD59014BDA863850787F5FFA1BE4B /* Sources */,
-				137876F2F956B0598918354CC054E34B /* Frameworks */,
-				5ED0817FDFF4E6F23F23F34B94FA12B0 /* Resources */,
+				A3FF2AA52BDA30EFF799043255B0B802 /* Headers */,
+				61D4AEDFACE28037A9D4F0E060425A91 /* Sources */,
+				D38E6E9965144A3B376ACBCED08C835A /* Frameworks */,
+				631226CE493E88B393419F00CFDE361C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2934CAF1DC97CD03FFCD83094BF6120C /* PBXTargetDependency */,
 			);
 			name = "Pods-JapanDice";
 			productName = Pods_JapanDice;
-			productReference = C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods_JapanDice.framework */;
+			productReference = C7A52DDD3A1EB467FA6CF12C9E300E43 /* Pods-JapanDice */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -289,6 +347,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				B08332B0C91F6CDC405644DADDB96E3C /* LicensePlist */,
 				B838D4A31139095456092E2507CA5FE8 /* Pods-JapanDice */,
 				92D4FBE774CB24BDE93321DA352C3D0A /* Pods-JapanDice-JapanDiceUITests */,
 				A7CF3A596785EE44A396312420ED05DD /* Pods-JapanDiceTests */,
@@ -297,14 +356,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5ED0817FDFF4E6F23F23F34B94FA12B0 /* Resources */ = {
+		631226CE493E88B393419F00CFDE361C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF62BDACA51320472A20B590B5A9A251 /* Resources */ = {
+		74D3E4B7ED287E05D7F790BD7249969A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,6 +380,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F6F4714B6553615AB0BACDEC46BD902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9326C39D600D9D579D69C1AE6E1FB91 /* Pods-JapanDice-JapanDiceUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41CE4FB08B2B1A0C3D03796DFF5EE12A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,37 +396,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C6CD59014BDA863850787F5FFA1BE4B /* Sources */ = {
+		61D4AEDFACE28037A9D4F0E060425A91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA26142675661F4DFAA02602C67880B /* Pods-JapanDice-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A6B1024E0BDF014F60BC61849346229E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5A06746AE0163BB0B2AA9EA44098916 /* Pods-JapanDice-JapanDiceUITests-dummy.m in Sources */,
+				1A6BBD23FCA11F798223F63D952FB079 /* Pods-JapanDice-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9AA3EB730BF2800B59F38CDE0ED0F855 /* PBXTargetDependency */ = {
+		2934CAF1DC97CD03FFCD83094BF6120C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LicensePlist;
+			target = B08332B0C91F6CDC405644DADDB96E3C /* LicensePlist */;
+			targetProxy = 1E1B57E3E498BA4F8BF1788A9B75C233 /* PBXContainerItemProxy */;
+		};
+		6A262DC64D53C07D14FAD0D424EA879C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JapanDice";
 			target = B838D4A31139095456092E2507CA5FE8 /* Pods-JapanDice */;
-			targetProxy = 07273E67B1DE3AD2F31469E446D30B65 /* PBXContainerItemProxy */;
+			targetProxy = 672DA000B2C0DF57D984FCF99D4CE4ED /* PBXContainerItemProxy */;
+		};
+		BD10DA525EA3A010BAB08BA4E79D5D2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LicensePlist;
+			target = B08332B0C91F6CDC405644DADDB96E3C /* LicensePlist */;
+			targetProxy = F023609AA0DF2B762944DC86FB02E33A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		046C796D977283E041E4BDE00129F346 /* Debug */ = {
+		4F09FB38447C71FD1AADF08ABB72F0BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F570E1680A80C268D865148DE3AB4515 /* Pods-JapanDice.debug.xcconfig */;
+			baseConfigurationReference = 57AAB148733CC3B5E8310C578AE2ADEB /* Pods-JapanDiceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -371,7 +442,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-JapanDiceTests/Pods-JapanDiceTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,7 +451,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-JapanDiceTests/Pods-JapanDiceTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -394,7 +465,44 @@
 			};
 			name = Debug;
 		};
-		1FE99304F979890998B69ACEE0B02039 /* Release */ = {
+		530EC729886FA28438B4B7F2F7F24F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F40BED8F32FD0E9452CE4235B727816 /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DBB9DF0369A5072D9FE2F0FE0F38C3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A91867B91BC7BE19D797C7418B38E0E /* Pods-JapanDice.release.xcconfig */;
 			buildSettings = {
@@ -432,79 +540,22 @@
 			};
 			name = Release;
 		};
-		477F7F28411CDFC6F96D39933902C36A /* Debug */ = {
+		73B4716BB6BF6AEF6B0C7ECDA00F8712 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F40BED8F32FD0E9452CE4235B727816 /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */;
+			baseConfigurationReference = AB5C7E8D36B8B27E5B7525C852C201F2 /* LicensePlist.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
-		};
-		4F09FB38447C71FD1AADF08ABB72F0BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57AAB148733CC3B5E8310C578AE2ADEB /* Pods-JapanDiceTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JapanDiceTests/Pods-JapanDiceTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JapanDiceTests/Pods-JapanDiceTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -634,6 +685,60 @@
 			};
 			name = Release;
 		};
+		AC41C238FFF05973A6A52774FF448BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58807FE24D388F6045DB4DF83DFABC43 /* LicensePlist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA98DE66214E9B8206CA984AC4C546F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BC93279A0772AC5E4FBEAC23F66285 /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D30C4D6436EC6A161DB8C505D9384DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06475877A5E6BBF7A5DCC7D1EA998B08 /* Pods-JapanDiceTests.release.xcconfig */;
@@ -672,9 +777,9 @@
 			};
 			name = Release;
 		};
-		DA00C33F8D3C2C7383605539BE633925 /* Release */ = {
+		EB6BEDB224694F9FB68021F0D9FA2F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8BC93279A0772AC5E4FBEAC23F66285 /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */;
+			baseConfigurationReference = F570E1680A80C268D865148DE3AB4515 /* Pods-JapanDice.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -686,7 +791,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -695,7 +800,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-JapanDice/Pods-JapanDice.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -704,20 +809,19 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F625E47BEA520D030D5F199B492638D /* Build configuration list for PBXNativeTarget "Pods-JapanDice-JapanDiceUITests" */ = {
+		230A3AFFC497F553B856C46DBB888C45 /* Build configuration list for PBXNativeTarget "Pods-JapanDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				477F7F28411CDFC6F96D39933902C36A /* Debug */,
-				DA00C33F8D3C2C7383605539BE633925 /* Release */,
+				EB6BEDB224694F9FB68021F0D9FA2F69 /* Debug */,
+				5DBB9DF0369A5072D9FE2F0FE0F38C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -740,11 +844,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64854765A2541CD30D47E7C7E699C8AF /* Build configuration list for PBXNativeTarget "Pods-JapanDice" */ = {
+		B774A22C22237B30003CE6BF6D1CF578 /* Build configuration list for PBXNativeTarget "Pods-JapanDice-JapanDiceUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				046C796D977283E041E4BDE00129F346 /* Debug */,
-				1FE99304F979890998B69ACEE0B02039 /* Release */,
+				530EC729886FA28438B4B7F2F7F24F8B /* Debug */,
+				CA98DE66214E9B8206CA984AC4C546F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA780A304D1C08C3C9CC83320DBE03DB /* Build configuration list for PBXAggregateTarget "LicensePlist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC41C238FFF05973A6A52774FF448BDA /* Debug */,
+				73B4716BB6BF6AEF6B0C7ECDA00F8712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

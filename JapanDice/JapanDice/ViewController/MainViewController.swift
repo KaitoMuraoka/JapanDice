@@ -45,7 +45,7 @@ class MainViewController: UIViewController {
     @IBAction func tapImage(_ sender: Any) {
         let itemName = nameLabel.text!
         
-        if itemName == "都道府県ダイス" {
+        if itemName == "都道府県サイコロ" {
             return
         }else{
             alertFunc(itemName)

@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -21,18 +22,15 @@
                                 <rect key="frame" x="20" y="88" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="4Iy-cx-kxd"/>
-                                    <constraint firstAttribute="width" secondItem="VtB-gI-Yhj" secondAttribute="height" multiplier="374:21" id="Ngl-K7-YnB"/>
+                                    <constraint firstAttribute="width" secondItem="VtB-gI-Yhj" secondAttribute="height" multiplier="374:21" id="8Wn-Sf-j0J"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D7p-4q-32c">
-                                <rect key="frame" x="0.0" y="117" width="414" height="779"/>
+                                <rect key="frame" x="0.0" y="117" width="414" height="745"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="779" id="ADa-K4-tjS"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1xv-Lp-lrJ">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -54,15 +52,17 @@
                         <viewLayoutGuide key="safeArea" id="zLD-J8-LBj"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="VtB-gI-Yhj" firstAttribute="top" secondItem="zLD-J8-LBj" secondAttribute="top" id="3iS-xr-HD8"/>
                             <constraint firstItem="VtB-gI-Yhj" firstAttribute="centerX" secondItem="VmS-4w-Nqq" secondAttribute="centerX" id="3sT-Dr-0c1"/>
                             <constraint firstItem="D7p-4q-32c" firstAttribute="centerX" secondItem="VmS-4w-Nqq" secondAttribute="centerX" id="8Oh-RB-ORW"/>
                             <constraint firstItem="D7p-4q-32c" firstAttribute="leading" secondItem="zLD-J8-LBj" secondAttribute="leading" id="Q6t-DK-OvN"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="D7p-4q-32c" secondAttribute="bottom" constant="-34" id="R19-2k-G7a"/>
                             <constraint firstItem="D7p-4q-32c" firstAttribute="top" secondItem="VtB-gI-Yhj" secondAttribute="bottom" constant="8" id="dH5-0v-GLP"/>
-                            <constraint firstItem="D7p-4q-32c" firstAttribute="centerX" secondItem="VmS-4w-Nqq" secondAttribute="centerX" id="q0X-WN-ATU"/>
+                            <constraint firstItem="D7p-4q-32c" firstAttribute="bottom" secondItem="zLD-J8-LBj" secondAttribute="bottom" id="g8f-6a-aiX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="全国主要観光地の人の流れ" id="8RD-yN-V6c"/>
+                    <navigationItem key="navigationItem" title="全国主要観光地の人の流れ" id="8RD-yN-V6c">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="goforward" catalog="system" id="XZC-cS-zcr"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="D7p-4q-32c" id="Jkb-0C-nEI"/>
                         <outlet property="dailyLabel" destination="VtB-gI-Yhj" id="jit-rv-eh7"/>
@@ -92,13 +92,13 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県ダイス" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4l-aq-gH0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県サイコロ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4l-aq-gH0">
                                 <rect key="frame" x="20" y="88" width="374" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="g4l-aq-gH0" secondAttribute="height" multiplier="187:18" id="mw2-yf-s7h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="日本" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-SM-g8R">
@@ -281,63 +281,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="y3A-VL-CGn">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="2402"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="Eey-sv-gpR">
+                                <rect key="frame" x="-793" y="0.0" width="2000" height="896"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQy-rV-qUV">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kuJ-8K-1us">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <visualEffectView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="16C-7G-REs">
+                                <rect key="frame" x="-793" y="-9" width="2000" height="905"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6t5-27-LBL">
+                                    <rect key="frame" x="0.0" y="0.0" width="2000" height="905"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-X0-t4U">
-                                            <rect key="frame" x="128.5" y="326" width="157" height="84"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="157" id="6wb-87-9Pr"/>
-                                                <constraint firstAttribute="height" constant="84" id="svH-BE-oWF"/>
-                                                <constraint firstAttribute="width" secondItem="wmn-X0-t4U" secondAttribute="height" multiplier="157:84" id="yDI-qQ-Zhb"/>
-                                            </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Support">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
-                                            </buttonConfiguration>
-                                            <connections>
-                                                <action selector="SuportButton:" destination="Y9F-tL-Drb" eventType="touchUpInside" id="3eH-sM-iiV"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enz-d4-wEY">
-                                            <rect key="frame" x="129" y="490" width="156" height="77"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="enz-d4-wEY" secondAttribute="height" multiplier="156:77" id="a15-PF-VXL"/>
-                                                <constraint firstAttribute="height" constant="77" id="odV-6M-ZhG"/>
-                                            </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="PrivacyPolicey">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
-                                            </buttonConfiguration>
-                                            <connections>
-                                                <action selector="PrivacyPolicyButton:" destination="Y9F-tL-Drb" eventType="touchUpInside" id="mCD-8O-zab"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <gestureRecognizers/>
-                                    <constraints>
-                                        <constraint firstItem="wmn-X0-t4U" firstAttribute="centerX" secondItem="kuJ-8K-1us" secondAttribute="centerX" id="45u-hz-tu5"/>
-                                        <constraint firstItem="enz-d4-wEY" firstAttribute="top" secondItem="wmn-X0-t4U" secondAttribute="bottom" constant="80" id="Bw1-QZ-CN9"/>
-                                        <constraint firstAttribute="bottom" secondItem="enz-d4-wEY" secondAttribute="bottom" constant="329" id="Jtq-23-bzc"/>
-                                        <constraint firstItem="enz-d4-wEY" firstAttribute="centerX" secondItem="kuJ-8K-1us" secondAttribute="centerX" id="THx-ru-KgR"/>
-                                    </constraints>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="regular"/>
                             </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wmn-X0-t4U">
+                                <rect key="frame" x="129" y="529" width="156" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Support">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SuportButton:" destination="Y9F-tL-Drb" eventType="touchUpInside" id="3eH-sM-iiV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="enz-d4-wEY">
+                                <rect key="frame" x="129" y="406" width="156" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PrivacyPolicey">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="PrivacyPolicyButton:" destination="Y9F-tL-Drb" eventType="touchUpInside" id="mCD-8O-zab"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TQj-Dw-Ev6"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="Eey-sv-gpR" firstAttribute="centerY" secondItem="enz-d4-wEY" secondAttribute="centerY" id="ElB-v3-M1Q"/>
+                            <constraint firstItem="Eey-sv-gpR" firstAttribute="trailing" secondItem="16C-7G-REs" secondAttribute="trailing" id="OUT-6d-EnM"/>
+                            <constraint firstItem="Eey-sv-gpR" firstAttribute="bottom" secondItem="16C-7G-REs" secondAttribute="bottom" id="daA-jB-EE0"/>
+                            <constraint firstItem="Eey-sv-gpR" firstAttribute="centerX" secondItem="wmn-X0-t4U" secondAttribute="centerX" id="g97-mb-rNb"/>
+                            <constraint firstItem="Eey-sv-gpR" firstAttribute="leading" secondItem="16C-7G-REs" secondAttribute="leading" id="mzD-Be-fgc"/>
+                            <constraint firstItem="Eey-sv-gpR" firstAttribute="top" secondItem="eSy-us-gnD" secondAttribute="top" id="ooy-zn-AdX"/>
+                            <constraint firstItem="16C-7G-REs" firstAttribute="top" secondItem="eSy-us-gnD" secondAttribute="topMargin" constant="-97" id="yJC-vb-Jx1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rwp-an-pMx"/>
                     <connections>
                         <outlet property="PrivacyPoliceyLabel" destination="enz-d4-wEY" id="UD2-ic-Ixx"/>
+                        <outlet property="SupportButtonLabel" destination="wmn-X0-t4U" id="Ljp-Ce-2Ei"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sAF-kH-e9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -373,6 +366,9 @@
         <image name="safari" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="日本" width="960" height="960"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

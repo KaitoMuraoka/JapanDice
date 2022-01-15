@@ -6,6 +6,7 @@ target 'JapanDice' do
   use_frameworks!
 
   # Pods for JapanDice
+  pod 'LicensePlist'
 
   target 'JapanDiceTests' do
     inherit! :search_paths
