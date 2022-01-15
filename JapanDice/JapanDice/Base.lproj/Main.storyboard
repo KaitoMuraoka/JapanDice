@@ -60,9 +60,7 @@
                             <constraint firstItem="D7p-4q-32c" firstAttribute="bottom" secondItem="zLD-J8-LBj" secondAttribute="bottom" id="g8f-6a-aiX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="全国主要観光地の人の流れ" id="8RD-yN-V6c">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="goforward" catalog="system" id="XZC-cS-zcr"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="全国主要観光地の人の流れ" id="8RD-yN-V6c"/>
                     <connections>
                         <outlet property="collectionView" destination="D7p-4q-32c" id="Jkb-0C-nEI"/>
                         <outlet property="dailyLabel" destination="VtB-gI-Yhj" id="jit-rv-eh7"/>
@@ -113,12 +111,12 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEx-5e-vS2">
-                                <rect key="frame" x="134" y="568" width="146.5" height="99.5"/>
+                                <rect key="frame" x="123.5" y="568" width="167" height="113.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pEx-5e-vS2" secondAttribute="height" multiplier="28:19" id="EdB-aM-rm3"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ダイスを振る">
+                                <buttonConfiguration key="configuration" style="filled" title="サイコロを振る">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -260,6 +258,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KMb-4B-wsb">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="goforward" catalog="system" id="dh1-gE-A7I">
+                            <color key="tintColor" red="0.32549019610000002" green="0.56078431370000004" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="reloadButtonTapped:" destination="V8H-0j-c1T" id="aBB-Sb-J5z"/>
                             </connections>
@@ -356,6 +355,7 @@
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="linkColor"/>
     <resources>
         <image name="bg3" width="2000" height="2402"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
@@ -369,6 +369,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

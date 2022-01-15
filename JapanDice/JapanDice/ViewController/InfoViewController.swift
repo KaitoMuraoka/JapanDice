@@ -26,14 +26,27 @@ class InfoViewController: UIViewController {
     
     @IBAction func SuportButton(_ sender: Any) {
         print("This is SuportButton")
+        
+        let url = URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSeVKCO0E6XMa2XiNasz0tHELgsFiy1XMRRcWgT-KUNwS0hM8w/viewform?usp=sf_link")
+        if UIApplication.shared.canOpenURL(url!) {
+            UIApplication.shared.open(url!)
+        }else{
+            print("ブラウザ立ち上げ失敗")
+        }
     }
     
     @IBAction func PrivacyPolicyButton(_ sender: Any) {
         print("This is PrivacyPolicyButton")
+        
+        let url = URL(string: "https://kaitomuraoka.github.io/JapanDice/")
+        if UIApplication.shared.canOpenURL(url!) {
+            UIApplication.shared.open(url!)
+        }else{
+            print("ブラウザ立ち上げ失敗")
+        }
     }
     
     private func SupportButtonLayout(){
-//        SupportButtonLabel.center = self.view.center
         SupportButtonLabel.frame = CGRect(x: (self.view.bounds.width-160)/2, y: view.frame.height / 2.5, width: 156, height: 84)
     }
     

@@ -18,8 +18,7 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        bottomView.frame.size = CGSize(width: view.frame.size.width, height: view.frame.size.height - 20)
+        self.navigationController?.navigationBar.tintColor = UIColor.link
         
         let url = URL(string: reciever)!
         let request = URLRequest(url: url)
