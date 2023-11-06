@@ -2,12 +2,12 @@
 //  JapanDiceUITestsLaunchTests.swift
 //  JapanDiceUITests
 //
-//  Created by 村岡海人 on 2021/10/15.
+//  Created by 村岡海人 on 2023/11/06.
 //
 
 import XCTest
 
-class JapanDiceUITestsLaunchTests: XCTestCase {
+final class JapanDiceUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

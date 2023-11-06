@@ -3,244 +3,140 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79ACD9A451E4AADE6C6E7625 /* Pods_JapanDiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE098AF6D6ED3E1852A36EE /* Pods_JapanDiceTests.framework */; };
-		8F4E975C139D0B28F8646D02 /* Pods_JapanDice_JapanDiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B856D5320CA3A5F610D8E6F7 /* Pods_JapanDice_JapanDiceUITests.framework */; };
-		9F239C1927852EA300C0711F /* pushSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F239C1827852EA300C0711F /* pushSound.mp3 */; };
-		9F239C1B27853B2000C0711F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F239C1A27853B2000C0711F /* WebViewController.swift */; };
-		9F39B499271949F200E54E17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B498271949F200E54E17 /* AppDelegate.swift */; };
-		9F39B49B271949F200E54E17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B49A271949F200E54E17 /* SceneDelegate.swift */; };
-		9F39B49D271949F200E54E17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B49C271949F200E54E17 /* MainViewController.swift */; };
-		9F39B4A0271949F200E54E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F39B49E271949F200E54E17 /* Main.storyboard */; };
-		9F39B4A2271949F700E54E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F39B4A1271949F700E54E17 /* Assets.xcassets */; };
-		9F39B4A5271949F700E54E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F39B4A3271949F700E54E17 /* LaunchScreen.storyboard */; };
-		9F39B4B0271949F700E54E17 /* JapanDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4AF271949F700E54E17 /* JapanDiceTests.swift */; };
-		9F39B4BA271949F700E54E17 /* JapanDiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */; };
-		9F39B4BC271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */; };
-		9F774819279141500088E7F9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F774818279141500088E7F9 /* InfoViewController.swift */; };
-		9F77481B2791A8CC0088E7F9 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F77481A2791A8CC0088E7F9 /* LicenseViewController.swift */; };
-		9F77481D2791B8FD0088E7F9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F77481C2791B8FD0088E7F9 /* Settings.bundle */; };
-		9FA17E21278D74D700F9928F /* CongestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E20278D74D700F9928F /* CongestionViewController.swift */; };
-		9FA17E23278D7B9300F9928F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E22278D7B9300F9928F /* API.swift */; };
-		9FA17E25278D7D9F00F9928F /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E24278D7D9F00F9928F /* Entity.swift */; };
-		9FA17E27278DD69D00F9928F /* CongestionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E26278DD69D00F9928F /* CongestionSingleton.swift */; };
-		9FDD2CB4278F190D00F9615E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDD2CB2278F190C00F9615E /* CollectionViewCell.swift */; };
-		9FDD2CB5278F190D00F9615E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FDD2CB3278F190C00F9615E /* CollectionViewCell.xib */; };
-		C43A97A1F2EF28849AD00A3A /* Pods_JapanDice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735102FB0BCA787A652D8113 /* Pods_JapanDice.framework */; };
+		3E8117C42AF8C36A00279807 /* JapanDiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8117C32AF8C36A00279807 /* JapanDiceApp.swift */; };
+		3E8117C62AF8C36A00279807 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8117C52AF8C36A00279807 /* ContentView.swift */; };
+		3E8117C82AF8C36B00279807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8117C72AF8C36B00279807 /* Assets.xcassets */; };
+		3E8117CB2AF8C36B00279807 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8117CA2AF8C36B00279807 /* Preview Assets.xcassets */; };
+		3E8117D52AF8C36B00279807 /* JapanDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8117D42AF8C36B00279807 /* JapanDiceTests.swift */; };
+		3E8117DF2AF8C36B00279807 /* JapanDiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8117DE2AF8C36B00279807 /* JapanDiceUITests.swift */; };
+		3E8117E12AF8C36B00279807 /* JapanDiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8117E02AF8C36B00279807 /* JapanDiceUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9F39B4AC271949F700E54E17 /* PBXContainerItemProxy */ = {
+		3E8117D12AF8C36B00279807 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9F39B48D271949F200E54E17 /* Project object */;
+			containerPortal = 3E8117B82AF8C36A00279807 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F39B494271949F200E54E17;
+			remoteGlobalIDString = 3E8117BF2AF8C36A00279807;
 			remoteInfo = JapanDice;
 		};
-		9F39B4B6271949F700E54E17 /* PBXContainerItemProxy */ = {
+		3E8117DB2AF8C36B00279807 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9F39B48D271949F200E54E17 /* Project object */;
+			containerPortal = 3E8117B82AF8C36A00279807 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F39B494271949F200E54E17;
+			remoteGlobalIDString = 3E8117BF2AF8C36A00279807;
 			remoteInfo = JapanDice;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9F239C2E27857FC700C0711F /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		14E0445D235423F13635FCC3 /* Pods-JapanDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDice.release.xcconfig"; path = "Target Support Files/Pods-JapanDice/Pods-JapanDice.release.xcconfig"; sourceTree = "<group>"; };
-		4AE098AF6D6ED3E1852A36EE /* Pods_JapanDiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapanDiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		735102FB0BCA787A652D8113 /* Pods_JapanDice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapanDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73F59BD42B377A5BBD9E04D1 /* Pods-JapanDiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDiceTests.release.xcconfig"; path = "Target Support Files/Pods-JapanDiceTests/Pods-JapanDiceTests.release.xcconfig"; sourceTree = "<group>"; };
-		9F239C1827852EA300C0711F /* pushSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pushSound.mp3; sourceTree = "<group>"; };
-		9F239C1A27853B2000C0711F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		9F39B495271949F200E54E17 /* JapanDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F39B498271949F200E54E17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F39B49A271949F200E54E17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F39B49C271949F200E54E17 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		9F39B49F271949F200E54E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F39B4A1271949F700E54E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9F39B4A4271949F700E54E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F39B4A6271949F700E54E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F39B4AB271949F700E54E17 /* JapanDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F39B4AF271949F700E54E17 /* JapanDiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceTests.swift; sourceTree = "<group>"; };
-		9F39B4B5271949F700E54E17 /* JapanDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITests.swift; sourceTree = "<group>"; };
-		9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9F774818279141500088E7F9 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		9F77481A2791A8CC0088E7F9 /* LicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
-		9F77481C2791B8FD0088E7F9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		9FA17E20278D74D700F9928F /* CongestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongestionViewController.swift; sourceTree = "<group>"; };
-		9FA17E22278D7B9300F9928F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		9FA17E24278D7D9F00F9928F /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		9FA17E26278DD69D00F9928F /* CongestionSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongestionSingleton.swift; sourceTree = "<group>"; };
-		9FDD2CB2278F190C00F9615E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		9FDD2CB3278F190C00F9615E /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		AFB250555A52981C019A6B28 /* Pods-JapanDiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDiceTests.debug.xcconfig"; path = "Target Support Files/Pods-JapanDiceTests/Pods-JapanDiceTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B856D5320CA3A5F610D8E6F7 /* Pods_JapanDice_JapanDiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapanDice_JapanDiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDAA9B9286A85636460F6E2B /* Pods-JapanDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDice.debug.xcconfig"; path = "Target Support Files/Pods-JapanDice/Pods-JapanDice.debug.xcconfig"; sourceTree = "<group>"; };
-		F39F7BBCB002480ECACF728C /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDice-JapanDiceUITests.release.xcconfig"; path = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F3CFC6146341D974BFB4180F /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanDice-JapanDiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-JapanDice-JapanDiceUITests/Pods-JapanDice-JapanDiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E8117C02AF8C36A00279807 /* JapanDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8117C32AF8C36A00279807 /* JapanDiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceApp.swift; sourceTree = "<group>"; };
+		3E8117C52AF8C36A00279807 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E8117C72AF8C36B00279807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E8117CA2AF8C36B00279807 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E8117D02AF8C36B00279807 /* JapanDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8117D42AF8C36B00279807 /* JapanDiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceTests.swift; sourceTree = "<group>"; };
+		3E8117DA2AF8C36B00279807 /* JapanDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8117DE2AF8C36B00279807 /* JapanDiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITests.swift; sourceTree = "<group>"; };
+		3E8117E02AF8C36B00279807 /* JapanDiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanDiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9F39B492271949F200E54E17 /* Frameworks */ = {
+		3E8117BD2AF8C36A00279807 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C43A97A1F2EF28849AD00A3A /* Pods_JapanDice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F39B4A8271949F700E54E17 /* Frameworks */ = {
+		3E8117CD2AF8C36B00279807 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79ACD9A451E4AADE6C6E7625 /* Pods_JapanDiceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F39B4B2271949F700E54E17 /* Frameworks */ = {
+		3E8117D72AF8C36B00279807 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F4E975C139D0B28F8646D02 /* Pods_JapanDice_JapanDiceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4482DCB8B75B7F582F45B515 /* Frameworks */ = {
+		3E8117B72AF8C36A00279807 = {
 			isa = PBXGroup;
 			children = (
-				735102FB0BCA787A652D8113 /* Pods_JapanDice.framework */,
-				B856D5320CA3A5F610D8E6F7 /* Pods_JapanDice_JapanDiceUITests.framework */,
-				4AE098AF6D6ED3E1852A36EE /* Pods_JapanDiceTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9F1447C22771DE7E00E18AAF /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9F39B49C271949F200E54E17 /* MainViewController.swift */,
-				9F239C1A27853B2000C0711F /* WebViewController.swift */,
-				9FA17E20278D74D700F9928F /* CongestionViewController.swift */,
-				9F774818279141500088E7F9 /* InfoViewController.swift */,
-				9F77481A2791A8CC0088E7F9 /* LicenseViewController.swift */,
-				9FDD2CB1278F18D000F9615E /* Cell */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		9F39B48C271949F200E54E17 = {
-			isa = PBXGroup;
-			children = (
-				9F39B497271949F200E54E17 /* JapanDice */,
-				9F39B4AE271949F700E54E17 /* JapanDiceTests */,
-				9F39B4B8271949F700E54E17 /* JapanDiceUITests */,
-				9F39B496271949F200E54E17 /* Products */,
-				DD864A7216310F0AA16BBC88 /* Pods */,
-				4482DCB8B75B7F582F45B515 /* Frameworks */,
+				3E8117C22AF8C36A00279807 /* JapanDice */,
+				3E8117D32AF8C36B00279807 /* JapanDiceTests */,
+				3E8117DD2AF8C36B00279807 /* JapanDiceUITests */,
+				3E8117C12AF8C36A00279807 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9F39B496271949F200E54E17 /* Products */ = {
+		3E8117C12AF8C36A00279807 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F39B495271949F200E54E17 /* JapanDice.app */,
-				9F39B4AB271949F700E54E17 /* JapanDiceTests.xctest */,
-				9F39B4B5271949F700E54E17 /* JapanDiceUITests.xctest */,
+				3E8117C02AF8C36A00279807 /* JapanDice.app */,
+				3E8117D02AF8C36B00279807 /* JapanDiceTests.xctest */,
+				3E8117DA2AF8C36B00279807 /* JapanDiceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F39B497271949F200E54E17 /* JapanDice */ = {
+		3E8117C22AF8C36A00279807 /* JapanDice */ = {
 			isa = PBXGroup;
 			children = (
-				9F39B498271949F200E54E17 /* AppDelegate.swift */,
-				9F39B49A271949F200E54E17 /* SceneDelegate.swift */,
-				9F1447C22771DE7E00E18AAF /* ViewController */,
-				9F39B49E271949F200E54E17 /* Main.storyboard */,
-				9FA17E26278DD69D00F9928F /* CongestionSingleton.swift */,
-				9FA17E24278D7D9F00F9928F /* Entity.swift */,
-				9FA17E22278D7B9300F9928F /* API.swift */,
-				9F39B4A1271949F700E54E17 /* Assets.xcassets */,
-				9F239C1827852EA300C0711F /* pushSound.mp3 */,
-				9F39B4A3271949F700E54E17 /* LaunchScreen.storyboard */,
-				9F39B4A6271949F700E54E17 /* Info.plist */,
-				9F77481C2791B8FD0088E7F9 /* Settings.bundle */,
+				3E8117C32AF8C36A00279807 /* JapanDiceApp.swift */,
+				3E8117C52AF8C36A00279807 /* ContentView.swift */,
+				3E8117C72AF8C36B00279807 /* Assets.xcassets */,
+				3E8117C92AF8C36B00279807 /* Preview Content */,
 			);
 			path = JapanDice;
 			sourceTree = "<group>";
 		};
-		9F39B4AE271949F700E54E17 /* JapanDiceTests */ = {
+		3E8117C92AF8C36B00279807 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9F39B4AF271949F700E54E17 /* JapanDiceTests.swift */,
+				3E8117CA2AF8C36B00279807 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E8117D32AF8C36B00279807 /* JapanDiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E8117D42AF8C36B00279807 /* JapanDiceTests.swift */,
 			);
 			path = JapanDiceTests;
 			sourceTree = "<group>";
 		};
-		9F39B4B8271949F700E54E17 /* JapanDiceUITests */ = {
+		3E8117DD2AF8C36B00279807 /* JapanDiceUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9F39B4B9271949F700E54E17 /* JapanDiceUITests.swift */,
-				9F39B4BB271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift */,
+				3E8117DE2AF8C36B00279807 /* JapanDiceUITests.swift */,
+				3E8117E02AF8C36B00279807 /* JapanDiceUITestsLaunchTests.swift */,
 			);
 			path = JapanDiceUITests;
-			sourceTree = "<group>";
-		};
-		9FDD2CB1278F18D000F9615E /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				9FDD2CB2278F190C00F9615E /* CollectionViewCell.swift */,
-				9FDD2CB3278F190C00F9615E /* CollectionViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		DD864A7216310F0AA16BBC88 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CDAA9B9286A85636460F6E2B /* Pods-JapanDice.debug.xcconfig */,
-				14E0445D235423F13635FCC3 /* Pods-JapanDice.release.xcconfig */,
-				F3CFC6146341D974BFB4180F /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */,
-				F39F7BBCB002480ECACF728C /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */,
-				AFB250555A52981C019A6B28 /* Pods-JapanDiceTests.debug.xcconfig */,
-				73F59BD42B377A5BBD9E04D1 /* Pods-JapanDiceTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F39B494271949F200E54E17 /* JapanDice */ = {
+		3E8117BF2AF8C36A00279807 /* JapanDice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F39B4BF271949F700E54E17 /* Build configuration list for PBXNativeTarget "JapanDice" */;
+			buildConfigurationList = 3E8117E42AF8C36B00279807 /* Build configuration list for PBXNativeTarget "JapanDice" */;
 			buildPhases = (
-				74289A2A33829E954D03A23A /* [CP] Check Pods Manifest.lock */,
-				9F39B491271949F200E54E17 /* Sources */,
-				9F39B492271949F200E54E17 /* Frameworks */,
-				9F39B493271949F200E54E17 /* Resources */,
-				9F239C2E27857FC700C0711F /* Embed App Extensions */,
+				3E8117BC2AF8C36A00279807 /* Sources */,
+				3E8117BD2AF8C36A00279807 /* Frameworks */,
+				3E8117BE2AF8C36A00279807 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -248,112 +144,106 @@
 			);
 			name = JapanDice;
 			productName = JapanDice;
-			productReference = 9F39B495271949F200E54E17 /* JapanDice.app */;
+			productReference = 3E8117C02AF8C36A00279807 /* JapanDice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9F39B4AA271949F700E54E17 /* JapanDiceTests */ = {
+		3E8117CF2AF8C36B00279807 /* JapanDiceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F39B4C2271949F700E54E17 /* Build configuration list for PBXNativeTarget "JapanDiceTests" */;
+			buildConfigurationList = 3E8117E72AF8C36B00279807 /* Build configuration list for PBXNativeTarget "JapanDiceTests" */;
 			buildPhases = (
-				E0D1B6FE3071A4635ADE45E1 /* [CP] Check Pods Manifest.lock */,
-				9F39B4A7271949F700E54E17 /* Sources */,
-				9F39B4A8271949F700E54E17 /* Frameworks */,
-				9F39B4A9271949F700E54E17 /* Resources */,
+				3E8117CC2AF8C36B00279807 /* Sources */,
+				3E8117CD2AF8C36B00279807 /* Frameworks */,
+				3E8117CE2AF8C36B00279807 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9F39B4AD271949F700E54E17 /* PBXTargetDependency */,
+				3E8117D22AF8C36B00279807 /* PBXTargetDependency */,
 			);
 			name = JapanDiceTests;
 			productName = JapanDiceTests;
-			productReference = 9F39B4AB271949F700E54E17 /* JapanDiceTests.xctest */;
+			productReference = 3E8117D02AF8C36B00279807 /* JapanDiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9F39B4B4271949F700E54E17 /* JapanDiceUITests */ = {
+		3E8117D92AF8C36B00279807 /* JapanDiceUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F39B4C5271949F700E54E17 /* Build configuration list for PBXNativeTarget "JapanDiceUITests" */;
+			buildConfigurationList = 3E8117EA2AF8C36B00279807 /* Build configuration list for PBXNativeTarget "JapanDiceUITests" */;
 			buildPhases = (
-				122EF0DE83CCED0D8E0F4BE2 /* [CP] Check Pods Manifest.lock */,
-				9F39B4B1271949F700E54E17 /* Sources */,
-				9F39B4B2271949F700E54E17 /* Frameworks */,
-				9F39B4B3271949F700E54E17 /* Resources */,
+				3E8117D62AF8C36B00279807 /* Sources */,
+				3E8117D72AF8C36B00279807 /* Frameworks */,
+				3E8117D82AF8C36B00279807 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9F39B4B7271949F700E54E17 /* PBXTargetDependency */,
+				3E8117DC2AF8C36B00279807 /* PBXTargetDependency */,
 			);
 			name = JapanDiceUITests;
 			productName = JapanDiceUITests;
-			productReference = 9F39B4B5271949F700E54E17 /* JapanDiceUITests.xctest */;
+			productReference = 3E8117DA2AF8C36B00279807 /* JapanDiceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9F39B48D271949F200E54E17 /* Project object */ = {
+		3E8117B82AF8C36A00279807 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					9F39B494271949F200E54E17 = {
-						CreatedOnToolsVersion = 13.0;
+					3E8117BF2AF8C36A00279807 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
-					9F39B4AA271949F700E54E17 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 9F39B494271949F200E54E17;
+					3E8117CF2AF8C36B00279807 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 3E8117BF2AF8C36A00279807;
 					};
-					9F39B4B4271949F700E54E17 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 9F39B494271949F200E54E17;
+					3E8117D92AF8C36B00279807 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 3E8117BF2AF8C36A00279807;
 					};
 				};
 			};
-			buildConfigurationList = 9F39B490271949F200E54E17 /* Build configuration list for PBXProject "JapanDice" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = 3E8117BB2AF8C36A00279807 /* Build configuration list for PBXProject "JapanDice" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 9F39B48C271949F200E54E17;
-			productRefGroup = 9F39B496271949F200E54E17 /* Products */;
+			mainGroup = 3E8117B72AF8C36A00279807;
+			productRefGroup = 3E8117C12AF8C36A00279807 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F39B494271949F200E54E17 /* JapanDice */,
-				9F39B4AA271949F700E54E17 /* JapanDiceTests */,
-				9F39B4B4271949F700E54E17 /* JapanDiceUITests */,
+				3E8117BF2AF8C36A00279807 /* JapanDice */,
+				3E8117CF2AF8C36B00279807 /* JapanDiceTests */,
+				3E8117D92AF8C36B00279807 /* JapanDiceUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9F39B493271949F200E54E17 /* Resources */ = {
+		3E8117BE2AF8C36A00279807 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F239C1927852EA300C0711F /* pushSound.mp3 in Resources */,
-				9F39B4A5271949F700E54E17 /* LaunchScreen.storyboard in Resources */,
-				9F39B4A2271949F700E54E17 /* Assets.xcassets in Resources */,
-				9F39B4A0271949F200E54E17 /* Main.storyboard in Resources */,
-				9F77481D2791B8FD0088E7F9 /* Settings.bundle in Resources */,
-				9FDD2CB5278F190D00F9615E /* CollectionViewCell.xib in Resources */,
+				3E8117CB2AF8C36B00279807 /* Preview Assets.xcassets in Resources */,
+				3E8117C82AF8C36B00279807 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F39B4A9271949F700E54E17 /* Resources */ = {
+		3E8117CE2AF8C36B00279807 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F39B4B3271949F700E54E17 /* Resources */ = {
+		3E8117D82AF8C36B00279807 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,154 +252,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		122EF0DE83CCED0D8E0F4BE2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JapanDice-JapanDiceUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		74289A2A33829E954D03A23A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JapanDice-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E0D1B6FE3071A4635ADE45E1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JapanDiceTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		9F39B491271949F200E54E17 /* Sources */ = {
+		3E8117BC2AF8C36A00279807 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA17E27278DD69D00F9928F /* CongestionSingleton.swift in Sources */,
-				9F39B49D271949F200E54E17 /* MainViewController.swift in Sources */,
-				9FDD2CB4278F190D00F9615E /* CollectionViewCell.swift in Sources */,
-				9F77481B2791A8CC0088E7F9 /* LicenseViewController.swift in Sources */,
-				9F39B499271949F200E54E17 /* AppDelegate.swift in Sources */,
-				9F774819279141500088E7F9 /* InfoViewController.swift in Sources */,
-				9FA17E25278D7D9F00F9928F /* Entity.swift in Sources */,
-				9FA17E21278D74D700F9928F /* CongestionViewController.swift in Sources */,
-				9F39B49B271949F200E54E17 /* SceneDelegate.swift in Sources */,
-				9FA17E23278D7B9300F9928F /* API.swift in Sources */,
-				9F239C1B27853B2000C0711F /* WebViewController.swift in Sources */,
+				3E8117C62AF8C36A00279807 /* ContentView.swift in Sources */,
+				3E8117C42AF8C36A00279807 /* JapanDiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F39B4A7271949F700E54E17 /* Sources */ = {
+		3E8117CC2AF8C36B00279807 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F39B4B0271949F700E54E17 /* JapanDiceTests.swift in Sources */,
+				3E8117D52AF8C36B00279807 /* JapanDiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F39B4B1271949F700E54E17 /* Sources */ = {
+		3E8117D62AF8C36B00279807 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F39B4BC271949F700E54E17 /* JapanDiceUITestsLaunchTests.swift in Sources */,
-				9F39B4BA271949F700E54E17 /* JapanDiceUITests.swift in Sources */,
+				3E8117E12AF8C36B00279807 /* JapanDiceUITestsLaunchTests.swift in Sources */,
+				3E8117DF2AF8C36B00279807 /* JapanDiceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9F39B4AD271949F700E54E17 /* PBXTargetDependency */ = {
+		3E8117D22AF8C36B00279807 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9F39B494271949F200E54E17 /* JapanDice */;
-			targetProxy = 9F39B4AC271949F700E54E17 /* PBXContainerItemProxy */;
+			target = 3E8117BF2AF8C36A00279807 /* JapanDice */;
+			targetProxy = 3E8117D12AF8C36B00279807 /* PBXContainerItemProxy */;
 		};
-		9F39B4B7271949F700E54E17 /* PBXTargetDependency */ = {
+		3E8117DC2AF8C36B00279807 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9F39B494271949F200E54E17 /* JapanDice */;
-			targetProxy = 9F39B4B6271949F700E54E17 /* PBXContainerItemProxy */;
+			target = 3E8117BF2AF8C36A00279807 /* JapanDice */;
+			targetProxy = 3E8117DB2AF8C36B00279807 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		9F39B49E271949F200E54E17 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F39B49F271949F200E54E17 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9F39B4A3271949F700E54E17 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F39B4A4271949F700E54E17 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		9F39B4BD271949F700E54E17 /* Debug */ = {
+		3E8117E22AF8C36B00279807 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -539,7 +332,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -553,24 +347,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		9F39B4BE271949F700E54E17 /* Release */ = {
+		3E8117E32AF8C36B00279807 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -600,7 +395,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -608,41 +404,38 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		9F39B4C0271949F700E54E17 /* Debug */ = {
+		3E8117E52AF8C36B00279807 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDAA9B9286A85636460F6E2B /* Pods-JapanDice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JapanDice/Preview Content\"";
 				DEVELOPMENT_TEAM = B58T472MM3;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JapanDice/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "都道府県サイコロ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaito.JapanDice;
+				PRODUCT_BUNDLE_IDENTIFIER = KaitoMuraoka.JapanDice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -650,31 +443,28 @@
 			};
 			name = Debug;
 		};
-		9F39B4C1271949F700E54E17 /* Release */ = {
+		3E8117E62AF8C36B00279807 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14E0445D235423F13635FCC3 /* Pods-JapanDice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JapanDice/Preview Content\"";
 				DEVELOPMENT_TEAM = B58T472MM3;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JapanDice/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "都道府県サイコロ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaito.JapanDice;
+				PRODUCT_BUNDLE_IDENTIFIER = KaitoMuraoka.JapanDice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -682,9 +472,8 @@
 			};
 			name = Release;
 		};
-		9F39B4C3271949F700E54E17 /* Debug */ = {
+		3E8117E82AF8C36B00279807 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFB250555A52981C019A6B28 /* Pods-JapanDiceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -692,25 +481,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B58T472MM3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaito.JapanDiceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = KaitoMuraoka.JapanDiceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanDice.app/JapanDice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanDice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JapanDice";
 			};
 			name = Debug;
 		};
-		9F39B4C4271949F700E54E17 /* Release */ = {
+		3E8117E92AF8C36B00279807 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73F59BD42B377A5BBD9E04D1 /* Pods-JapanDiceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -718,38 +501,27 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B58T472MM3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaito.JapanDiceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = KaitoMuraoka.JapanDiceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanDice.app/JapanDice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanDice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JapanDice";
 			};
 			name = Release;
 		};
-		9F39B4C6271949F700E54E17 /* Debug */ = {
+		3E8117EB2AF8C36B00279807 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3CFC6146341D974BFB4180F /* Pods-JapanDice-JapanDiceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B58T472MM3;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaito.JapanDiceUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = KaitoMuraoka.JapanDiceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -758,22 +530,16 @@
 			};
 			name = Debug;
 		};
-		9F39B4C7271949F700E54E17 /* Release */ = {
+		3E8117EC2AF8C36B00279807 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F39F7BBCB002480ECACF728C /* Pods-JapanDice-JapanDiceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B58T472MM3;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaito.JapanDiceUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = KaitoMuraoka.JapanDiceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -785,43 +551,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F39B490271949F200E54E17 /* Build configuration list for PBXProject "JapanDice" */ = {
+		3E8117BB2AF8C36A00279807 /* Build configuration list for PBXProject "JapanDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F39B4BD271949F700E54E17 /* Debug */,
-				9F39B4BE271949F700E54E17 /* Release */,
+				3E8117E22AF8C36B00279807 /* Debug */,
+				3E8117E32AF8C36B00279807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F39B4BF271949F700E54E17 /* Build configuration list for PBXNativeTarget "JapanDice" */ = {
+		3E8117E42AF8C36B00279807 /* Build configuration list for PBXNativeTarget "JapanDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F39B4C0271949F700E54E17 /* Debug */,
-				9F39B4C1271949F700E54E17 /* Release */,
+				3E8117E52AF8C36B00279807 /* Debug */,
+				3E8117E62AF8C36B00279807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F39B4C2271949F700E54E17 /* Build configuration list for PBXNativeTarget "JapanDiceTests" */ = {
+		3E8117E72AF8C36B00279807 /* Build configuration list for PBXNativeTarget "JapanDiceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F39B4C3271949F700E54E17 /* Debug */,
-				9F39B4C4271949F700E54E17 /* Release */,
+				3E8117E82AF8C36B00279807 /* Debug */,
+				3E8117E92AF8C36B00279807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F39B4C5271949F700E54E17 /* Build configuration list for PBXNativeTarget "JapanDiceUITests" */ = {
+		3E8117EA2AF8C36B00279807 /* Build configuration list for PBXNativeTarget "JapanDiceUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F39B4C6271949F700E54E17 /* Debug */,
-				9F39B4C7271949F700E54E17 /* Release */,
+				3E8117EB2AF8C36B00279807 /* Debug */,
+				3E8117EC2AF8C36B00279807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9F39B48D271949F200E54E17 /* Project object */;
+	rootObject = 3E8117B82AF8C36A00279807 /* Project object */;
 }

@@ -2,12 +2,12 @@
 //  JapanDiceUITests.swift
 //  JapanDiceUITests
 //
-//  Created by 村岡海人 on 2021/10/15.
+//  Created by 村岡海人 on 2023/11/06.
 //
 
 import XCTest
 
-class JapanDiceUITests: XCTestCase {
+final class JapanDiceUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,7 +27,6 @@ class JapanDiceUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
